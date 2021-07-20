@@ -12,7 +12,7 @@ export default function Tecnologies() {
     return (
         <Container style={{ marginTop: 100 }}>
             <Col className="colStacks">
-                <Col>Stacks</Col>
+                <Col className="mainTitle">Habilidades</Col>
                 <Row className="RowStacks">
                     <Col xs={3} className="stack">
                         <Col className="tecTitle">JavaScript</Col>
