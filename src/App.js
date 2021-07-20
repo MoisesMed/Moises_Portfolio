@@ -2,6 +2,7 @@ import Header from './components/Header/Header.js'
 import Footer from './components/Footer/Footer.js'
 import Welcome from './components/Welcome/Welcome.js'
 import About from './components/About/About.js'
+import Tecnologies from './components/Tecnologies/Tecnologies.js'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Welcome />
       <About />
+      <Tecnologies />
       <Footer />
     </div >
   );

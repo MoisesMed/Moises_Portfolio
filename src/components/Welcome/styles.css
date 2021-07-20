@@ -1,11 +1,16 @@
 .RowMain{
     justify-content: center;
     align-items: center;
-    margin-bottom:100px;
+    margin-bottom:80px;
+}
+@media screen and (max-width: 550px) {
+  .RowMain {
+    margin-top:10px;
+    margin-bottom:-80px
+  }
 }
 
 .ColEsquerda{
-    /* background-color:antiquewhite; */
     max-width: 50%;
     width:50%;
     word-wrap: normal;
@@ -15,7 +20,29 @@
     align-items:center;
     margin-bottom:150px
 }
+.nameStrong{
+    font-size: 25px;
+}
+
+.img{
+    width:115%
+}
 
 .paragrafo{
-margin-bottom:1px !important
+    margin-bottom:1px !important
+}
+
+@media screen and (max-width: 550px) {
+  .ColEsquerda {
+    font-size:15px;
+    width:70%;
+    max-width: 70%;
+  }
+  .nameStrong{
+      font-size:17px
+  }
+  .img {
+margin-bottom:150px;
+margin-left:-20px
+  }
 }

@@ -15,7 +15,7 @@ export default function About() {
             <Col>
                 <Row className="textoSobreTitle"><text>Sobre</text></Row>
                 <Row className="textoSobre"><text>Meu nome é Moisés, tenho 22 anos, sou desenvolvedor Web e Mobile, técnico de informática e amante de tecnologia.</text></Row>
-                <Row className="textoSobre"><text>Comecei a programar em C++ e Java no começo de 2019,por conta da faculdade, mudei para JavaScript em 2020, logo antes de arrumar meu primeiro emprego como desenvolvedor Front End.</text></Row>
+                <Row className="textoSobre"><text>Por conta da faculdade comecei a programar em C++ e Java no começo de 2019. Em 2020, mudei para JavaScript, e logo depois arrumei meu primeiro emprego como desenvolvedor Front End.</text></Row>
                 <Row className="textoSobre"><text>Meu primeiro emprego foi como estagiário de desenvolvimento Web utilizando JavaScript, HTML, CSS, React e SQL.</text></Row>
             </Col>
         </Container>

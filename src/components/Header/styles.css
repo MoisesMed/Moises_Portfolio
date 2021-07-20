@@ -1,24 +1,39 @@
 .containerMain{
-    background-color:white;
-    padding:0px;
-    margin:0px;
+    background-color:#FFFFFF;
     display:flex;
-    height:50px;
-    align-items:center;
-    position:sticky
+    height:40px;
+    justify-content: start;
+    align-items: center;
+    position:sticky !important;
+    top:0;
+    z-index:1;
+    width:100%;
+    max-width: 100%;
 }
 
 .nome{
-    font-weight: 600;
-    padding:10px;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size:19px;
+    font-weight: 550;
+    padding-left:15px;
 }
 
 .sobre{
-    padding:10px;
-    font-weight:500
+    padding-top:5px !important;
+    justify-content: center;
+    align-items: center;
+    font-size:15px;
+    font-weight:500;
+    padding-left:10px;
 }
 
 .projetos{
-    padding:10px;
-    font-weight:500
+    padding-top:5px !important;
+    justify-content: center;
+    align-items: center;
+    font-weight:500;
+    padding-left:10px;
+    font-size:15px;
 }

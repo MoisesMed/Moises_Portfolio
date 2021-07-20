@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import {
     Container,
+    Col, Row
 } from "react-bootstrap";
 
 import "./styles.css";
@@ -10,9 +11,12 @@ export default function Header() {
 
     return (
         <Container className="containerMain">
-            <div className="nome">Moisés</div>
-            <div className="sobre">Sobre</div>
-            <div className="projetos">Projetos</div>
+            <Row>
+                <Col className="nome">Moisés Medeiros</Col>
+                <Col className="sobre">Início</Col>
+                <Col className="sobre">Sobre</Col>
+                <Col className="projetos">Projetos</Col>
+            </Row>
         </Container>
     );
 };

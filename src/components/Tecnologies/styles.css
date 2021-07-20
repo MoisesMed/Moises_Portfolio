@@ -1,0 +1,24 @@
+.colStacks{
+    text-align: -webkit-center
+}
+
+.RowStacks{
+    text-align: -webkit-center;
+    justify-content: center;
+    align-items: center;
+}
+
+.stack{
+    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.175); */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+    /* background-color:antiquewhite; */
+    margin:10px;
+    height:100px;
+}
+
+.tecTitle{
+    padding:8px;
+    font-size:18px;
+    font-weight:550
+}
