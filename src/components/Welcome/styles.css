@@ -1,0 +1,21 @@
+.RowMain{
+    justify-content: center;
+    align-items: center;
+    margin-bottom:100px;
+}
+
+.ColEsquerda{
+    /* background-color:antiquewhite; */
+    max-width: 50%;
+    width:50%;
+    word-wrap: normal;
+    box-sizing:border-box;
+    font-size:19px;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:150px
+}
+
+.paragrafo{
+margin-bottom:1px !important
+}

@@ -1,0 +1,24 @@
+.containerMain{
+    background-color:white;
+    padding:0px;
+    margin:0px;
+    display:flex;
+    height:50px;
+    align-items:center;
+    position:sticky
+}
+
+.nome{
+    font-weight: 600;
+    padding:10px;
+}
+
+.sobre{
+    padding:10px;
+    font-weight:500
+}
+
+.projetos{
+    padding:10px;
+    font-weight:500
+}
