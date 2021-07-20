@@ -11,16 +11,13 @@ import "./styles.css";
 export default function About() {
 
     return (
-        <Container>
-            <Row className="RowMain" >
-                <Col xs={7} className="ColEsquerda">
-                    <p className="paragrafo">Oi :)</p>
-                    <p className="paragrafo">Meu nome é <strong>Moisés Medeiros.</strong> </p>
-                    <p className="paragrafo">Sou desenvolvedor Front End...</p>
-                </Col>
-                <Col xs={5}>
-                </Col>
-            </Row>
+        <Container className="containerSobre">
+            <Col>
+                <Row className="textoSobreTitle"><text>Sobre</text></Row>
+                <Row className="textoSobre"><text>Meu nome é Moisés, tenho 22 anos, sou desenvolvedor Web e Mobile, técnico de informática e amante de tecnologia.</text></Row>
+                <Row className="textoSobre"><text>Comecei a programar em C++ e Java no começo de 2019,por conta da faculdade, mudei para JavaScript em 2020, logo antes de arrumar meu primeiro emprego como desenvolvedor Front End.</text></Row>
+                <Row className="textoSobre"><text>Meu primeiro emprego foi como estagiário de desenvolvimento Web utilizando JavaScript, HTML, CSS, React e SQL.</text></Row>
+            </Col>
         </Container>
     );
 };

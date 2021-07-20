@@ -1,20 +1,23 @@
-.RowMain{
+.containerSobre{
+   text-align: -webkit-center 
+}
+
+.RowSobre{
     justify-content: center;
     align-items: center;
+    text-align: -webkit-center
 }
-
-.ColEsquerda{
-    /* background-color:antiquewhite; */
-    max-width: 50%;
-    width:50%;
-    word-wrap: normal;
-    box-sizing:border-box;
-    font-size:19px;
+.textoSobreTitle{
     justify-content:center;
-    align-items:center;
-    margin-bottom:150px
+    font-weight:600;
+    font-size:24px;
+    text-align: -webkit-center;
+    margin-bottom:5px;
 }
-
-.paragrafo{
-margin-bottom:1px !important
+.textoSobre{
+    width:650px;
+    font-size:19px;
+ justify-content:center;
+ text-align: -webkit-center;
+ margin-bottom:10px
 }
