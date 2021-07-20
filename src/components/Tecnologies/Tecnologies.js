@@ -7,54 +7,42 @@ import {
 
 import "./styles.css";
 
+const Sticks = [
+    { nome: "JavaScript", img: "https://img.icons8.com/color/60/000000/javascript--v1.png" },
+    { nome: "HTML", img: "https://img.icons8.com/color/60/000000/html-5--v1.png" },
+    { nome: "CSS", img: "https://img.icons8.com/color/60/000000/css3.png" },
+    { nome: "Bootstrap", img: "https://img.icons8.com/color/60/000000/bootstrap.png" },
+    { nome: "TypeScript", img: "https://img.icons8.com/color/60/000000/typescript.png" },
+    { nome: "React", img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" },
+    { nome: "React Native", img: "https://img.icons8.com/color/60/000000/react-native.png" },
+    { nome: "SQL", img: "https://image.flaticon.com/icons/png/512/2772/2772128.png" },
+    { nome: "Git", img: "https://img.icons8.com/color/48/000000/git.png" },
+    { nome: "NPM", img: "https://img.icons8.com/color/48/000000/npm.png" },
+    { nome: "SQL Server", img: "https://img.icons8.com/color/48/000000/microsoft-sql-server.png" },
+    { nome: "FireBase", img: "https://img.icons8.com/color/48/000000/firebase.png" }
+]
+
+
 export default function Tecnologies() {
 
     return (
-        <Container style={{ marginTop: 100 }}>
+        <Container style={{
+            marginTop: 100, backgroundColor: "#d5f7e6", maxWidth: "100%", paddingTop: 25, paddingBottom: 35
+        }}>
             <Col className="colStacks">
                 <Col className="mainTitle">Habilidades</Col>
                 <Row className="RowStacks">
-                    <Col xs={3} className="stack">
-                        <Col className="tecTitle">JavaScript</Col>
-                        <Col>
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40" />
+                    {Sticks.map((item) =>
+                        <Col xs={3} className="stack" >
+                            <Col className="tecTitle">{item.nome}</Col>
+                            <Col>
+                                <img src={item.img} style={{ width: 60, height: 60 }} />
+                            </Col>
                         </Col>
-                    </Col>
-                    <Col xs={3} className="stack">
-                        <Col className="tecTitle">TypeScript</Col>
-                        <Col>
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40" />
-                        </Col>
-                    </Col>
-                    <Col xs={3} className="stack">
-                        <Col className="tecTitle">Bootstrap</Col>
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40" />
-                        <Col>
-                        </Col>
-                    </Col>
-                </Row>
-                <Row className="RowStacks">
-                    <Col xs={3} className="stack">
-                        <Col className="tecTitle">React</Col>
-                        <Col>
-                            <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40" />
-                        </Col>
-                    </Col>
-                    <Col xs={3} className="stack">
-                        <Col className="tecTitle">HTML</Col>
-                        <Col>
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40" />
-                        </Col>
-                    </Col>
-                    <Col xs={3} className="stack">
-                        <Col className="tecTitle">Css</Col>
-                        <Col>
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40" />
-                        </Col>
-                    </Col>
+                    )}
                 </Row>
             </Col>
-        </Container>
+        </Container >
     );
 };
 

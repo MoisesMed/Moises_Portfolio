@@ -16,7 +16,7 @@ export default function Welcome() {
             <Row className="RowMain" >
                 <Col xs={7} className="ColEsquerda">
                     <p className="paragrafo">Oi <strong>:)</strong></p>
-                    <p className="paragrafo">Meu nome é <strong className="nameStrong">Moisés Medeiros</strong> </p>
+                    <p className="paragrafo">Meu nome é <strong className="nameStrong">Moisés</strong>, </p>
                     <p className="paragrafo">Sou desenvolvedor Front End.</p>
                 </Col>
                 <Col xs={5}>
