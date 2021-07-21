@@ -48,3 +48,14 @@
     }
 
  }
+
+  @media screen and (max-width: 350px) {
+    .nome{
+        font-size:10px;
+        padding-top:3px
+    }
+    .sobre{
+        font-size:8px
+    }
+
+ }

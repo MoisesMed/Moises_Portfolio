@@ -9,8 +9,8 @@ import Button from '@material-ui/core/Button';
 import "./styles.css";
 
 const Projetos = [
-    { nome: "Meu_Curriculo", descricao: "Curriculo online", github: "https://github.com/MoisesMed/Meu_Curriculo", vercel: "https://teamsoft.vercel.app/compra" },
-    { nome: "E-commerce", descricao: "Teste para uma vaga de estágio", github: "https://github.com/MoisesMed/Ecommerce", vercel: "https://meu-curriculo-vert.vercel.app/" },
+    { nome: "Meu_Curriculo", descricao: "Curriculo online", github: "https://github.com/MoisesMed/Meu_Curriculo", vercel: "https://meu-curriculo-vert.vercel.app/" },
+    { nome: "E-commerce", descricao: "Teste para uma vaga de estágio", github: "https://github.com/MoisesMed/Ecommerce", vercel: "https://teamsoft.vercel.app/compra" },
     { nome: "ProjetoBebidas", descricao: "Projeto feito em 2 aulas para a faculdade", github: "https://github.com/MoisesMed/ProjetoBebidas", vercel: 0 }
 ]
 export default function Projects() {
@@ -30,7 +30,7 @@ export default function Projects() {
                             <Row style={{ justifyContent: "center", bottom: 0, position: "absolute", alignItems: "flex-end" }}>
                                 {item.vercel === 0 ?
                                     <Row style={{ justifyContent: "center" }}>
-                                        <Button className="onlyGithub" variant="contained" color="primary" target="_blank">
+                                        <Button className="onlyGithub" variant="contained" color="primary" href={item.github} target="_blank" >
                                             GitHub
                                         </Button>
                                     </Row>
