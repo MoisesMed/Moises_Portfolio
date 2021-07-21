@@ -27,8 +27,9 @@ export default function Tecnologies() {
 
     return (
         <Container style={{
-            marginTop: 100, backgroundColor: "#d5f7e6", maxWidth: "100%", paddingTop: 25, paddingBottom: 35
-        }}>
+            marginTop: 100, backgroundColor: "#d5f7e6", maxWidth: "100%", paddingTop: 40, paddingBottom: 45
+        }}
+            id="section3">
             <Col className="colStacks">
                 <Col className="mainTitle">Habilidades</Col>
                 <Row className="RowStacks">

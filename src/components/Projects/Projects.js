@@ -18,7 +18,8 @@ export default function Projects() {
     return (
         <Container style={{
             marginTop: 120, backgroundColor: "white", maxWidth: "100%", paddingTop: 15, paddingBottom: 15
-        }}>
+        }}
+            id="section4">
             <Col className="ColProjetos">
                 <Col className="mainTitle">Projetos</Col>
                 <Row className="RowStacks">

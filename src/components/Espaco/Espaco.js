@@ -8,7 +8,7 @@ import {
 
 import "./styles.css";
 
-export default function About() {
+export default function Espaco() {
 
     return (
         <Container className="containerSobre" id="section2">
