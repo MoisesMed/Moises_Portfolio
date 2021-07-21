@@ -28,7 +28,7 @@ export default function Header() {
                         Habilidades
                     </a>
                 </Col>
-                <Col className="projetos">
+                <Col className="sobre">
                     <a href="#section4" style={{ color: "black" }}>
                         Projetos
                     </a>

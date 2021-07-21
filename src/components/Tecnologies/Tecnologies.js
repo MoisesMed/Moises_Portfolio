@@ -27,17 +27,17 @@ export default function Tecnologies() {
 
     return (
         <Container style={{
-            marginTop: 100, backgroundColor: "#d5f7e6", maxWidth: "100%", paddingTop: 40, paddingBottom: 45
+            marginTop: 100, backgroundColor: "#d5f7e6", maxWidth: "100%"
         }}
             id="section3">
-            <Col className="colStacks">
+            <Col className="colStacks" style={{ paddingTop: 50, paddingBottom: 50 }}>
                 <Col className="mainTitle">Habilidades</Col>
                 <Row className="RowStacks">
                     {Sticks.map((item) =>
                         <Col xs={3} className="stack" >
                             <Col className="tecTitle">{item.nome}</Col>
                             <Col>
-                                <img src={item.img} style={{ width: 60, height: 60 }} />
+                                <img src={item.img} className="tecImg" style={{ width: 60 }} />
                             </Col>
                         </Col>
                     )}

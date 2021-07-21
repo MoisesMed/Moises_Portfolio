@@ -17,7 +17,7 @@ export default function Projects() {
 
     return (
         <Container style={{
-            marginTop: 60, backgroundColor: "white", maxWidth: "100%", paddingTop: 100, paddingBottom: 15
+            marginTop: 60, backgroundColor: "white", maxWidth: "100%", paddingTop: 100, paddingBottom: 100
         }}
             id="section4">
             <Col className="ColProjetos">
@@ -25,21 +25,21 @@ export default function Projects() {
                 <Row className="RowStacks">
                     {Projetos.map((item) =>
                         <Col xs={3} className="projetoBox" >
-                            <Col className="tecTitle">{item.nome}</Col>
+                            <Col className="projeTitle">{item.nome}</Col>
                             <Row style={{ justifyContent: "center" }}>{item.descricao}</Row>
                             <Row style={{ justifyContent: "center", bottom: 0, position: "absolute", alignItems: "flex-end" }}>
                                 {item.vercel === 0 ?
                                     <Row style={{ justifyContent: "center" }}>
-                                        <Button style={{ marginLeft: 110, marginBottom: 12, backgroundColor: "#63e1a8", fontWeight: 550 }} variant="contained" color="primary" target="_blank">
+                                        <Button className="onlyGithub" variant="contained" color="primary" target="_blank">
                                             GitHub
                                         </Button>
                                     </Row>
                                     :
                                     <Col>
-                                        <Button style={{ margin: 10, marginLeft: 30, width: 80, marginBottom: 12, backgroundColor: "#63e1a8", fontWeight: 550 }} variant="contained" color="primary" href={item.github} target="_blank" >
+                                        <Button className="githubButton" variant="contained" color="primary" href={item.github} target="_blank" >
                                             GitHub
                                         </Button>
-                                        <Button style={{ margin: 10, width: 80, marginBottom: 12, backgroundColor: "#63e1a8", fontWeight: 550 }} variant="contained" color="primary" href={item.vercel} target="_blank" >
+                                        <Button className="vercelButton" variant="contained" color="primary" href={item.vercel} target="_blank" >
                                             Vercel
                                         </Button>
                                     </Col>

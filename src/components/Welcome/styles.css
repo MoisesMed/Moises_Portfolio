@@ -35,14 +35,19 @@
 @media screen and (max-width: 550px) {
   .ColEsquerda {
     font-size:15px;
-    width:70%;
+    width:60%;
     max-width: 70%;
+    margin-bottom:50px
   }
   .nameStrong{
       font-size:17px
   }
   .img {
-margin-bottom:150px;
-margin-left:-20px
+    width:140%;
+margin-bottom:50px;
+margin-left:-40px
+  }
+  .RowMain{
+    padding-top:20px
   }
 }

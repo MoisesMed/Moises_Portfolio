@@ -30,3 +30,20 @@ text-align:center;
   font-weight:540;
   font-size:16px
 }
+
+@media screen and (max-width: 550px) {
+  .containerFooter{
+      min-height:115px
+  }
+  .footerTop{
+   font-weight:500;
+   font-size:17px
+  }
+}
+
+@media screen and (max-width: 350px) {
+
+  .containerFooter{
+      min-height:181px
+  }
+}

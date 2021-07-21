@@ -37,3 +37,14 @@
     padding-left:10px;
     font-size:15px;
 }
+
+ @media screen and (max-width: 550px) {
+    .nome{
+        font-size:13px;
+        padding-top:4px
+    }
+    .sobre{
+        font-size:12px
+    }
+
+ }
