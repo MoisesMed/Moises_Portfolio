@@ -1,20 +1,32 @@
-.footer{
-    display:flex;
-    align-items:flex-end;
-    justify-content: flex-end;
-    padding: 3px 8px;
-    background-color: #FFF;
-    bottom: 0;
-    right: 0;
-    position: inherit;
-    font-size: 12px;
-}@media screen and (max-width: 600px) {
-  .footer {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width:600px;
-    padding-bottom:120px;
-    display:none;
-  }
+.containerFooter{
+  width:100%;
+  max-width:100%;
+  align-items: center;
+  justify-content:center;
+  text-align:center;
+  height:80px;
+  background-color:#d5f7e6;
+}
+.footerTop{
+justify-content: center;
+align-items: center;
+text-align:center;
+padding-bottom:2px;
+font-weight: 540;
+font-size:17px
+}
+.footerBottom{
+justify-content: center;
+align-items: center;
+text-align:center;
+}
+.email{
+  padding: 2px;
+  padding-right:5px;
+  padding-left:5px;
+  border-radius: 4px;
+  background-color: #0171c5;
+  color:white;
+  font-weight:540;
+  font-size:16px
 }
