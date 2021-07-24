@@ -40,52 +40,24 @@
 }
 
  @media screen and (max-width: 550px) {
-    .containerMain{
-    background-color:#FFFFFF;
-    display:flex;
-    height:40px;
-    justify-content: center;
-    align-items: center;
-    position:sticky !important;
-    top:0;
-    z-index:1;
-    width:100%;
-    max-width: 100%;
-    margin:0px !important;
-    padding:0px !important;
-}
     .nome{
-        font-size:10px;
-        padding-top:4px
+        font-size:11px;
+        padding-top:4px;
     }
     .sobre{
-        font-size:9px
+        font-size:8px
     }
 
  }
 
   @media screen and (max-width: 350px) {
-    .containerMain{
-    background-color:#FFFFFF;
-    display:flex;
-    height:40px;
-    justify-content: center;
-    align-items: center;
-    position:sticky !important;
-    top:0;
-    z-index:1;
-    width:100%;
-    max-width: 100%;
-    margin:0px !important;
-    padding:0px !important;
-}
     .nome{
         font-size:8px;
         padding-top:4px
     }
     .sobre{
         font-weight: 700;
-        font-size:7px;
+        font-size:6px;
     }
 
  }

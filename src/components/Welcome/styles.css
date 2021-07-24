@@ -38,8 +38,8 @@
 @media screen and (max-width: 550px) {
   .ColEsquerda {
     font-size:15px;
-    width:60%;
-    max-width: 70%;
+    width:55%;
+    max-width: 55%;
     margin-bottom:50px
   }
   .nameStrong{
