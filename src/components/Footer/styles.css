@@ -4,8 +4,8 @@
   align-items: center;
   justify-content:center;
   text-align:center;
-  height:80px;
-  background-color:#d5f7e6;
+  height:85px;
+  background-color:white;
 }
 .footerTop{
 justify-content: center;
@@ -33,7 +33,8 @@ text-align:center;
 
 @media screen and (max-width: 550px) {
   .containerFooter{
-      min-height:115px
+      min-height:112px;
+      height:112px
   }
   .footerTop{
    font-weight:500;
@@ -44,6 +45,20 @@ text-align:center;
 @media screen and (max-width: 350px) {
 
   .containerFooter{
-      min-height:181px
+      min-height:115px
   }
+}
+
+.badge{
+  background-color:#C0C0C0;
+  border-radius:8px;
+  justify-content: center;
+  align-items: center;
+  margin:5px;
+  margin-right:8px;
+  margin-left:8px;
+  color:white;
+  padding:3px;
+  padding-right:5px;
+  padding-left:5px
 }

@@ -3,6 +3,7 @@ import Footer from './components/Footer/Footer.js'
 import Welcome from './components/Welcome/Welcome.js'
 import About from './components/About/About.js'
 import Tecnologies from './components/Tecnologies/Tecnologies.js'
+import Certificates from './components/Certificates/Certificates.js'
 import Projects from './components/Projects/Projects.js'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Welcome />
       <About />
       <Tecnologies />
+      <Certificates />
       <Projects />
       <Footer />
     </div >

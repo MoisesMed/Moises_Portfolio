@@ -15,7 +15,7 @@
 .mainTitle{
     font-size:30px;
     font-weight:600;
-    padding-bottom:12px
+    padding-bottom:15px
 }
 
 .stack{
@@ -23,7 +23,7 @@
     /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
     /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
     /* background-color:antiquewhite; */
-    margin:12px;
+    margin:15px;
     height:120px;
     background-color:white;
     width:270px !important;

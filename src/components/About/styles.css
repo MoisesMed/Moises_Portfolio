@@ -1,6 +1,9 @@
 .containerSobre{
    text-align: -webkit-center;
-   margin-top:-30px;
+   /* margin-top:-30px; */
+   /* border:1px solid; */
+   padding-top:100px;
+   padding-bottom:100px
 }
 
 .RowSobre{
@@ -9,23 +12,23 @@
     text-align: -webkit-center
 }
 .textoSobreTitle{
-    padding-top:50px;
+    /* padding-top:50px; */
     justify-content:center;
     font-weight:600;
-    font-size:30px;
+    font-size:32px;
     text-align: -webkit-center;
-    margin-bottom:8px;
+    /* margin-bottom:12px; */
 }
 .textoSobre{
     width:60%;
     font-size:19px;
  justify-content:center;
  text-align: -webkit-center;
- margin-bottom:15px
+ margin-top:18px
 }
 
 @media screen and (max-width: 550px) {
   .textoSobre{
-      width:80%
+      width:100%
   }
 }

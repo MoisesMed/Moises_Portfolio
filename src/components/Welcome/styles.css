@@ -1,12 +1,14 @@
 .RowMain{
     justify-content: center;
     align-items: center;
-    margin-bottom:80px;
 }
 @media screen and (max-width: 550px) {
   .RowMain {
-    margin-top:10px;
-    margin-bottom:-80px
+    margin-top:-50px;
+    margin-bottom:-50px
+  }
+  .img{
+   margin-left:-25px
   }
 }
 
@@ -15,17 +17,18 @@
     width:50%;
     word-wrap: normal;
     box-sizing:border-box;
-    font-size:21px;
+    font-size:25px;
     justify-content:center;
     align-items:center;
-    margin-bottom:150px
+    margin-bottom:180px
 }
 .nameStrong{
-    font-size: 25px;
+    font-size: 29px;
 }
 
 .img{
-    width:115%
+    width:125%;
+    margin-left:-35px
 }
 
 .paragrafo{

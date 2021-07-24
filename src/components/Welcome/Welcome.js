@@ -12,7 +12,7 @@ import "./styles.css";
 export default function Welcome() {
 
     return (
-        <Container id="section1" style={{ marginBottom: -80 }}>
+        <Container id="bemvindo" style={{ paddingTop: 100 }}>
             <Row className="RowMain" >
                 <Col xs={7} className="ColEsquerda">
                     <p className="paragrafo">Oi <strong>:)</strong></p>

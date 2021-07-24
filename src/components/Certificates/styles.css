@@ -1,0 +1,126 @@
+.certMain{
+    padding-top: 100px !important; 
+    padding-bottom: 100px !important;
+    padding:0px;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.rowCard{
+    margin-top:15px !important;
+    flex-flow: nowrap; 
+    width: 400px; 
+    height: 130px; 
+    /* border: 1px solid black; */
+    padding: 3px; 
+    margin: 0px ;
+    background-color:#d5f7e6;
+    border-radius:6px;
+     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.175);
+     margin-bottom:25px
+}
+
+.certIcons{
+    padding-right:5px
+}
+
+.certLeft{
+    font-size:16px !important;
+    padding:0px;
+    margin:0px;
+    justify-content:flex-start;
+    text-align: -webkit-auto;
+    padding:5px;
+    align-items: center;
+}
+.certImg{
+    justify-content: center;
+    padding-top:15px
+}
+
+.rowMainTitle{
+    justify-content: center;
+    font-size:30px;
+    font-weight:600;
+    padding-bottom:15px;
+    width:100%;
+    margin:0px;
+    margin-bottom:10px !important; 
+}
+
+.rowTitle{
+    margin:0px;
+    padding:0px;
+    justify-content:flex-start;
+    margin-bottom:5px
+}
+.rowImg{
+      margin:0px;
+    padding:0px;
+    justify-content:center; 
+}
+
+.certTitle{
+       font-size:14px !important;
+    padding:0px;
+    margin:0px;
+    margin-left:5px;
+    font-weight: 600;
+    justify-content:flex-start;
+    text-align: -webkit-auto; 
+}
+
+.certRow{
+    font-size:13px !important;
+    padding:2px;
+    margin:0px;
+    margin-left:4px;
+    justify-content:flex-start;
+    text-align: -webkit-auto;
+    padding-left:3px;
+    padding-bottom:2px;
+}
+.buttonRow{
+    margin-top:5px !important;
+    padding: 0px;
+    margin: 0px;
+    flex-flow: nowrap;
+}
+.buttonLeft{
+    margin-right:15px !important
+}
+
+@media screen and (max-width: 350px) {
+    .imgCert{
+        width:60px !important
+    }
+.certTitle{
+    font-size:13px !important
+}.certRow{
+    font-size:12px !important
+}
+  .rowCard{
+      width:100% !important;
+      margin:0px !important;
+      padding:0px !important;
+      height:140px;
+      max-height: 140px;
+      padding:2px !important;
+      margin-bottom:25px !important
+  }
+  .buttonLeft{
+      margin-right:15px !important;
+      font-size:10px !important;
+      padding:3px !important
+  }.buttonRight{
+      font-size:10px !important;
+      padding:3px !important
+  }
+}
+
+@media screen and (max-width: 380px) {
+    .rowCard{
+        height:155px !important
+    }
+}

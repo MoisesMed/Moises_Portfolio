@@ -1,21 +1,22 @@
 .containerMain{
-    background-color:#FFFFFF;
+    background-color:#d5f7e6;
     display:flex;
-    height:40px;
-    justify-content: start;
+    height:55px;
+   justify-content: space-between;
     align-items: center;
-    position:sticky !important;
-    top:0;
+    /* position:sticky !important; */
+    /* top:0; */
     z-index:1;
     width:100%;
     max-width: 100%;
+    margin:0px;
 }
 
 .nome{
     white-space: nowrap;
     justify-content: center;
     align-items: center;
-    font-size:19px;
+    font-size:22px;
     font-weight: 550;
     padding-left:15px;
 }
@@ -24,7 +25,7 @@
     padding-top:5px !important;
     justify-content: center;
     align-items: center;
-    font-size:15px;
+    font-size:18px;
     font-weight:500;
     padding-left:10px;
 }
@@ -39,23 +40,52 @@
 }
 
  @media screen and (max-width: 550px) {
+    .containerMain{
+    background-color:#FFFFFF;
+    display:flex;
+    height:40px;
+    justify-content: center;
+    align-items: center;
+    position:sticky !important;
+    top:0;
+    z-index:1;
+    width:100%;
+    max-width: 100%;
+    margin:0px !important;
+    padding:0px !important;
+}
     .nome{
-        font-size:13px;
+        font-size:10px;
         padding-top:4px
     }
     .sobre{
-        font-size:12px
+        font-size:9px
     }
 
  }
 
   @media screen and (max-width: 350px) {
+    .containerMain{
+    background-color:#FFFFFF;
+    display:flex;
+    height:40px;
+    justify-content: center;
+    align-items: center;
+    position:sticky !important;
+    top:0;
+    z-index:1;
+    width:100%;
+    max-width: 100%;
+    margin:0px !important;
+    padding:0px !important;
+}
     .nome{
-        font-size:10px;
-        padding-top:3px
+        font-size:8px;
+        padding-top:4px
     }
     .sobre{
-        font-size:8px
+        font-weight: 700;
+        font-size:7px;
     }
 
  }

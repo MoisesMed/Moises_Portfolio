@@ -11,7 +11,7 @@ import "./styles.css";
 export default function About() {
 
     return (
-        <Container className="containerSobre" id="section2">
+        <Container className="containerSobre" id="sobre">
             <Col>
                 <Row className="textoSobreTitle"><text>Sobre</text></Row>
                 <Row className="textoSobre"><text>Meu nome é Moisés Medeiros, tenho 22 anos, sou desenvolvedor Web e Mobile, técnico de informática e amante de tecnologia.</text></Row>

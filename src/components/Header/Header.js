@@ -11,25 +11,32 @@ import "./styles.css";
 export default function Header() {
 
     return (
-        <Container className="containerMain">
+        <Container className="containerMain" id="cabecalho">
             <Row>
                 <Col className="nome">
-                    <a href="#section1" style={{ color: "black" }}>
+                    <a href="#cabecalho" style={{ color: "black" }}>
                         Moisés Medeiros
                     </a>
                 </Col>
+            </Row>
+            <Row>
                 <Col className="sobre">
-                    <a href="#section2" style={{ color: "black" }}>
+                    <a href="#sobre" style={{ color: "black" }}>
                         Sobre
                     </a>
                 </Col>
                 <Col className="sobre">
-                    <a href="#section3" style={{ color: "black" }}>
+                    <a href="#tecnologias" style={{ color: "black" }}>
                         Habilidades
                     </a>
                 </Col>
                 <Col className="sobre">
-                    <a href="#section4" style={{ color: "black" }}>
+                    <a href="#certificacoes" style={{ color: "black" }}>
+                        Certificações
+                    </a>
+                </Col>
+                <Col className="sobre">
+                    <a href="#projetos" style={{ color: "black" }}>
                         Projetos
                     </a>
                 </Col>

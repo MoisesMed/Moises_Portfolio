@@ -1,35 +1,64 @@
 .ColProjetos{
     text-align: -webkit-center;
-    margin-top:-50px;
-    margin-bottom:50px;
 }
 
 .projetoBox{
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.175);
     margin:12px;
-    height:150px;
+    height:160px;
     background-color:white;
     width:270px !important;
     max-width:270px;
+    min-width:270px;
     border-radius:12px;
     text-align:-webkit-center;
 }
 
 .projeTitle{
-        padding-top:2px !important;
+        padding-top:8px !important;
     padding-bottom:8px;
     font-size:21px !important;
     font-weight:550
 }
+.projeDesc{
+
+}
+
+
+@media screen and (max-width: 380px) {
+    .projeDesc{
+        font-size:14px
+    }
+    .projeTitle{
+        font-size:19px !important
+    }
+    .projetoBox{
+        min-width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+ .projetoBox{
+        min-width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+ .projetoBox{
+        min-width: 40%;
+    }
+}
 .onlyGithub{
-    margin-left: 110px !important; 
+    margin: 10px !important; 
+    /* margin-left: 30px !important;  */
+    width: 80px !important; 
     margin-bottom: 12px !important; 
     background-color: #63e1a8 !important; 
     font-weight: 550 !important 
 }
 .githubButton{
     margin: 10px !important; 
-    margin-left: 30px !important; 
+    /* margin-left: 30px !important;  */
     width: 80px !important; 
     margin-bottom: 12px !important; 
     background-color: #63e1a8 !important; 
@@ -42,16 +71,4 @@
    margin-bottom: 12px !important; 
    background-color: #63e1a8 !important; 
    font-weight: 550 !important 
-}
-
-@media screen and (max-width: 550px) {
-  .projetoBox{
-      min-width:300px
-  }
-  .githubButton{
-      margin-left:45px !important
-  }
-  .onlyGithub{
-      margin-left:125px !important
-  }
 }

@@ -27,10 +27,10 @@ export default function Tecnologies() {
 
     return (
         <Container style={{
-            marginTop: 100, backgroundColor: "#d5f7e6", maxWidth: "100%"
+            paddingTop: 100, paddingBottom: 100, backgroundColor: "#d5f7e6", maxWidth: "100%"
         }}
-            id="section3">
-            <Col className="colStacks" style={{ paddingTop: 50, paddingBottom: 50 }}>
+            id="tecnologias">
+            <Col className="colStacks" >
                 <Col className="mainTitle">Habilidades</Col>
                 <Row className="RowStacks">
                     {Sticks.map((item) =>
