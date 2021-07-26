@@ -13,7 +13,7 @@ export default function Welcome() {
 
     return (
         <Container id="bemvindo" style={{ paddingTop: 100 }}>
-            <Row className="RowMain" >
+            <Row className="RowMain" style={{ padding: 0, margin: 0 }} >
                 <Col xs={7} className="ColEsquerda">
                     <p className="paragrafo">Oi <strong>:)</strong></p>
                     <p className="paragrafo">Meu nome é <strong className="nameStrong">Moisés</strong>, </p>

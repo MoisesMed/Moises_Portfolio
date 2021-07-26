@@ -50,14 +50,26 @@
 
  }
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 350px)  {
     .nome{
-        font-size:8px;
-        padding-top:4px
+        font-size:0.5rem !important;
+        padding-top:4px;
+        color:red
     }
     .sobre{
         font-weight: 700;
-        font-size:6px;
+        font-size:0.4rem !important;
     }
 
+ }
+
+ @media screen and (min-width: 750px) {
+   .nome{
+        font-size:1.2rem !important;
+        padding-top:4px;
+    }
+    .sobre{
+        font-weight: 700;
+        font-size:1rem !important;
+    }
  }

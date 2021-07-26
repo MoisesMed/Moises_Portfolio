@@ -35,7 +35,8 @@
     padding-top:2px !important;
     padding-bottom:8px;
     font-size:21px !important;
-    font-weight:550
+    font-weight:550;
+     white-space: nowrap !important
 }
 .tecImg{
     width: 60px !important;
@@ -55,7 +56,8 @@
       margin:0px;
   }
   .tecTitle{
-      font-size:15px !important
+      font-size:15px !important;
+       white-space: nowrap !important
   }
   .tecImg{
       width:45px !important;
@@ -73,6 +75,7 @@
       padding-bottom:2px !important;
       white-space: nowrap !important;
     justify-content: center !important;
+    white-space: nowrap;
     text-align: center !important;
     padding: 0px !important;
       font-size:15px !important
@@ -81,4 +84,11 @@
       width:48px !important;
       height:48px !important;
   }
+}
+
+@media screen and (min-width: 700px) {
+    .tecTitle{
+        font-size:1.2rem !important;
+        white-space: nowrap !important
+    }
 }
