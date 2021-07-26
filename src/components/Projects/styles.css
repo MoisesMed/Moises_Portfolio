@@ -73,3 +73,9 @@
    background-color: #63e1a8 !important; 
    font-weight: 550 !important 
 }
+
+@media screen and (max-width: 280px) {
+    .projetoBox{
+        min-width: 100% !important;
+    }
+}

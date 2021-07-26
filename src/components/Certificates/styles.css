@@ -85,6 +85,7 @@
     margin-top:5px !important;
     padding: 0px;
     margin: 0px;
+    margin-bottom:5px;
     flex-flow: nowrap;
 }
 .buttonLeft{
@@ -104,8 +105,6 @@
       width:100% !important;
       margin:0px !important;
       padding:0px !important;
-      height:140px;
-      max-height: 140px;
       padding:2px !important;
       margin-bottom:25px !important
   }
@@ -121,6 +120,12 @@
 
 @media screen and (max-width: 380px) {
     .rowCard{
-        height:155px !important
+        height:100% !important
     }
+}
+
+.popup-content{
+    background-color:darkgrey !important;
+    border-radius:8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.175);
 }

@@ -28,6 +28,7 @@
     font-size:18px;
     font-weight:500;
     padding-left:10px;
+    padding-right:5px;
 }
 
 .projetos{
@@ -41,35 +42,68 @@
 
  @media screen and (max-width: 550px) {
     .nome{
-        font-size:11px;
+        font-size:0.9rem;
         padding-top:4px;
     }
     .sobre{
-        font-size:8px
+          font-weight: 600;
+        font-size:0.6rem;
     }
 
  }
 
-  @media screen and (max-width: 350px)  {
+  @media screen and (max-width: 375px)  {
     .nome{
-        font-size:0.5rem !important;
-        padding-top:4px;
+        font-size:0.8rem !important;
+        padding-top:2px;
         color:red
     }
     .sobre{
-        font-weight: 700;
-        font-size:0.4rem !important;
+        font-weight: 600;
+        font-size:0.5rem !important;
     }
 
  }
 
  @media screen and (min-width: 750px) {
    .nome{
-        font-size:1.2rem !important;
+        font-size:1.4rem !important;
         padding-top:4px;
     }
     .sobre{
         font-weight: 700;
-        font-size:1rem !important;
+        font-size:1.1rem !important;
+        margin-left:15px;
     }
+ }
+
+
+ 
+  @media screen and (max-width: 280px)  {
+    .nome{
+        font-size:0.5rem !important;
+        padding-top:5px;
+        color:red
+    }
+    .sobre{
+        font-weight: 600;
+        font-size:0.2rem !important;
+        margin-right:2px !important;
+    }
+
+ }
+
+  
+  @media screen and (max-width: 320px)  {
+    .nome{
+        font-size:0.6rem !important;
+        padding-top:3px;
+        color:red;
+    }
+    .sobre{
+        font-weight: 600;
+        font-size:0.4rem !important;
+        margin-right:5px !important;
+    }
+
  }

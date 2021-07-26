@@ -20,22 +20,22 @@ export default function Header() {
                 </Col>
             </Row>
             <Row>
-                <Col className="sobre">
+                <Col className="sobre" style={{ padding: 0, marginRight: 10 }}>
                     <a href="#sobre" style={{ color: "black" }}>
                         Sobre
                     </a>
                 </Col>
-                <Col className="sobre">
+                <Col className="sobre" style={{ padding: 0, marginRight: 10 }}>
                     <a href="#tecnologias" style={{ color: "black" }}>
                         Habilidades
                     </a>
                 </Col>
-                <Col className="sobre">
+                <Col className="sobre" style={{ padding: 0, marginRight: 10 }}>
                     <a href="#certificacoes" style={{ color: "black" }}>
                         Certificações
                     </a>
                 </Col>
-                <Col className="sobre">
+                <Col className="sobre" style={{ padding: 0, marginRight: 10 }}>
                     <a href="#projetos" style={{ color: "black" }}>
                         Projetos
                     </a>
