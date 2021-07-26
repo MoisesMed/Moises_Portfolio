@@ -122,10 +122,20 @@
     .rowCard{
         height:100% !important
     }
+    .popup-content{
+        font-size:0.7rem !important;
+        left:40px !important
+    }
 }
 
 .popup-content{
-    background-color:darkgrey !important;
+    background-color:gainsboro !important;
     border-radius:8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.175);
+    font-size:0.8rem;
+    /* left:40px !important */
+    padding:5px
+}
+.popup-arrow {
+  color: gainsboro !important;
 }

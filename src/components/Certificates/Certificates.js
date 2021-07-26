@@ -22,14 +22,7 @@ const Cursos = [
         data: "Emitido em 25 de junho de 2021",
         carga: "5 horas",
         link: "https://certificates.digitalinnovation.one/EEDC0B77",
-        conteudo: [
-            "Configurar uma aplicação com Webpack",
-            "Integrar o Redux em uma aplicação React",
-            "Desenvolver uma aplicação full-stack em Javascript",
-            "Criar componentes em React",
-            "Desenvolver uma aplicação do zero com React/Redux",
-            "Aplicar boas práticas de desenvolvimento"
-        ]
+        conteudo: [""]
     },
     {
         img: "https://media-exp1.licdn.com/dms/image/C4D0BAQGwg6B2WR3_vw/company-logo_100_100/0/1544649290856?e=1634774400&v=beta&t=l4IDPB8AAdbV-LF6M1wwacTR355XJyNXAR_4yWrl9Rw",
@@ -72,14 +65,7 @@ const Cursos = [
         data: "Emitido em 2016",
         carga: "16 horas",
         link: "none",
-        conteudo: [
-            "Configurar uma aplicação com Webpack",
-            "Integrar o Redux em uma aplicação React",
-            "Desenvolver uma aplicação full-stack em Javascript",
-            "Criar componentes em React",
-            "Desenvolver uma aplicação do zero com React/Redux",
-            "Aplicar boas práticas de desenvolvimento"
-        ]
+        conteudo: [""]
     },
 ]
 
@@ -101,24 +87,27 @@ export default function Certificates() {
                             <Row className="certRow">Carga horária: {item.carga}</Row>
                             <Row className="buttonRow">
                                 <Col>
-                                    {item.link == "none" ? "" :
+                                    {item.link == "none" ? null :
                                         <Button href={item.link} target="_blank" className="buttonLeft" style={{ width: "45%", marginRight: 10, fontSize: 12, backgroundColor: "cornflowerblue", border: "0px", padding: 3, margin: 0 }}>
-                                            Ver credencial
+                                            Credencial
                                         </Button>}
-                                    <Popup
-                                        style={{ backgroundColor: "red", borderRadius: 8 }}
-                                        trigger={open => (
-                                            <Button className="buttonRight" style={{ width: "43%", marginLeft: 10, fontSize: 12, backgroundColor: "cornflowerblue", border: "0px", padding: 3, margin: 0 }}>
-                                                Ver conteúdo
-                                            </Button>
-                                        )}
-                                        // on={['hover', 'focus']}
-                                        position="bottom center"
-                                        closeOnDocumentClick
-                                    >
-                                        {item.conteudo.map((lista) =>
-                                            (<Col >- {lista}</Col>))}
-                                    </Popup>
+                                    {item.conteudo.length === 1 ?
+                                        null :
+                                        <Popup
+                                            style={{ backgroundColor: "red", borderRadius: 8 }}
+                                            trigger={open => (
+                                                <Button className="buttonRight" style={{ width: "43%", marginLeft: 10, fontSize: 12, backgroundColor: "cornflowerblue", border: "0px", padding: 3, margin: 0 }}>
+                                                    Conteúdo
+                                                </Button>
+                                            )}
+                                            on={['hover', 'focus']}
+                                            position="bottom center"
+                                            closeOnDocumentClick
+                                        >
+                                            {item.conteudo.map((lista) =>
+                                                (<Col className="p-0 m-0" >- {lista}</Col>))}
+                                        </Popup>}
+
                                 </Col>
                             </Row>
                         </Col>
