@@ -17,7 +17,10 @@
 
 <hr>
 
-<h3>O projeto está disponível em : https://moises-portfolio.vercel.app/ </h3>
+<h3>O projeto está disponível em : 
+<a href="https://moises-portfolio.vercel.app" target="_blank"> 
+https://moises-portfolio.vercel.app/ 
+</a> </h3>
 <br>
 
 ![moises-portfolio vercel app_](https://user-images.githubusercontent.com/43209743/127076302-f40233c9-38c9-42af-952f-528b623fce40.png)
