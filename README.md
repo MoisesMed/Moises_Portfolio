@@ -7,7 +7,7 @@
 
 <h3>Tecnologias  usadas no desenvolvimento</h3>
 <ul>
-    <li>JavaScrip</li>
+    <li>JavaScript</li>
     <li>HTML</li>
     <li>CSS</li>
     <li>React.JS</li>
