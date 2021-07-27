@@ -22,7 +22,15 @@ const Cursos = [
         data: "Emitido em 25 de junho de 2021",
         carga: "5 horas",
         link: "https://certificates.digitalinnovation.one/EEDC0B77",
-        conteudo: [""]
+        conteudo: [
+            "Introdução ao Git",
+            "Navegação via command line interface e instalação",
+            "Entendendo como o Git funciona por baixo dos panos",
+            "Primeiros comandos com Git",
+            "Ciclo de vida dos arquivos em Git",
+            "Introdução ao Github",
+            "Resolvendo conflitos"
+        ]
     },
     {
         img: "https://media-exp1.licdn.com/dms/image/C4D0BAQGwg6B2WR3_vw/company-logo_100_100/0/1544649290856?e=1634774400&v=beta&t=l4IDPB8AAdbV-LF6M1wwacTR355XJyNXAR_4yWrl9Rw",
@@ -65,7 +73,14 @@ const Cursos = [
         data: "Emitido em 2016",
         carga: "16 horas",
         link: "none",
-        conteudo: [""]
+        conteudo: [
+            "Introdução ao Hardware e Montagem de Computadores – 16 horas",
+            "Redes – Lógica e Estruturação – 12 horas",
+            "Redes – Tecnologia Wireless – 8 horas",
+            "Redes -Cabeamento e Infraestrutura – 13 horas",
+            "Manutenção de Computadores  –  8 horas",
+            "Cabeamento Estruturado e Rede Wireless – 8 horas"
+        ]
     },
 ]
 
@@ -105,7 +120,7 @@ export default function Certificates() {
                                             closeOnDocumentClick
                                         >
                                             {item.conteudo.map((lista) =>
-                                                (<Col className="p-0 m-0" >- {lista}</Col>))}
+                                                (<Col className="p-0 m-0" >· {lista}</Col>))}
                                         </Popup>}
 
                                 </Col>
