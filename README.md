@@ -17,10 +17,10 @@
 
 <hr>
 
-<h3>O projeto está disponível em : https://meu-curriculo-vert.vercel.app/ </h3>
+<h3>O projeto está disponível em : https://moises-portfolio.vercel.app/ </h3>
 <br>
 
-![meu_curriculo](https://user-images.githubusercontent.com/43209743/126416326-08d0deff-1849-48b6-9044-6a336fd1bfdb.png)
+![moises-portfolio vercel app_](https://user-images.githubusercontent.com/43209743/127076302-f40233c9-38c9-42af-952f-528b623fce40.png)
 
 
 <span style="text-align:end;">Desenvoldido por <b>Moisés Medeiros</b>.<span>
