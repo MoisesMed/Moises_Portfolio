@@ -5,8 +5,11 @@ import About from './components/About/About.js'
 import Tecnologies from './components/Tecnologies/Tecnologies.js'
 import Certificates from './components/Certificates/Certificates.js'
 import Projects from './components/Projects/Projects.js'
+import ReactGA from 'react-ga';
 
 function App() {
+  ReactGA.initialize('G-BB7PQZKY80');
+  ReactGA.pageview(window.location.pathname + window.location.search);
   return (
     <div className="App" >
       <Header />
