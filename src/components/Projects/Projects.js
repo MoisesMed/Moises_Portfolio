@@ -9,7 +9,7 @@ import Button from '@material-ui/core/Button';
 import "./styles.css";
 
 const Projetos = [
-    { nome: "Meu_Curriculo", descricao: "Projeto de um currículo responsivo online", github: "https://github.com/MoisesMed/Meu_Curriculo", vercel: "https://meu-curriculo-vert.vercel.app/" },
+    { nome: "Meu_Curriculo", descricao: "Projeto de um currículo responsivo online", github: "https://github.com/MoisesMed/Meu_Curriculo", vercel: "https://moises-portfolio.vercel.app/" },
     { nome: "E-commerce", descricao: "Projeto de simulação de uma página de E-commerce", github: "https://github.com/MoisesMed/Ecommerce", vercel: "https://teamsoft.vercel.app/compra" },
     { nome: "ProjetoBebidas", descricao: "E-commerce de bebidas feito em 2 aulas da faculdade", github: "https://github.com/MoisesMed/ProjetoBebidas", vercel: 0 }
 ]
