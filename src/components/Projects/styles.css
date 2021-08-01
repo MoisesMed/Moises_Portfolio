@@ -3,7 +3,7 @@
 }
 
 .projetoBox{
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.175);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.175);
     margin:12px;
     height:160px;
     background-color:white;
@@ -13,6 +13,19 @@
     border-radius:12px;
     text-align:-webkit-center;
 }
+.projetoBoxUnder{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.175);
+    margin:12px;
+    height:160px;
+    background-color:white;
+    width:270px !important;
+    max-width:270px;
+    min-width:270px;
+    border-radius:12px;
+    text-align:-webkit-center;
+    border: 1px solid #ffbf00!important
+}
+
 
 .projeTitle{
         padding-top:8px !important;
