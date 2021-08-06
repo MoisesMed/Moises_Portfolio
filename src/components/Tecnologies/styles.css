@@ -27,6 +27,7 @@
     height:120px;
     background-color:white;
     width:270px !important;
+    min-width:270px !important;
     max-width:270px;
     border-radius:12px;
 }
@@ -46,9 +47,9 @@
 
 @media screen and (max-width: 550px) {
   .stack{
-      width:40%;
-      max-width:40%;
-      min-width:40%;
+      width:115px !important;
+      max-width:115px !important;
+      min-width:115px !important;
       margin:15px !important;
       height:100px;
       min-height:100px;
@@ -65,10 +66,20 @@
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
+  .stack{
+      width:150px !important;
+      max-width:150px !important;
+      min-width:150px !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
     .stack{
         min-height:90px !important;
-        height:90px
+        height:90px;
+        min-width: 115px !important;
+        width:115px !important;
     }
   .tecTitle{
       padding-top:5px !important;

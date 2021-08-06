@@ -119,3 +119,34 @@
     }
 
  }
+
+.NavBar{
+    background-color:#d5f7e6 !important;
+}
+
+.NavBarItemTitle{
+color:black !important;
+font-size:23px;
+font-weight:600;
+    padding: 0px;
+    margin: 1px;
+    margin-right:20px;
+        /* margin-left:-20px */
+}
+
+.NavBarItem{
+    color:black !important;
+    font-size:18px;
+    /* font-weight: 600; */
+        padding: 0px;
+    margin: 0px;
+    margin-right:20px
+}
+
+.navbar-collapse{
+    color:red !important
+}
+
+.responsive-navbar-nav{
+    color:black !important;
+}
