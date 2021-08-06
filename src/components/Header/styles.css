@@ -144,7 +144,8 @@ font-weight:600;
 }
 
 .navbar-collapse{
-    color:red !important
+    color:red !important;
+    justify-content: flex-end;
 }
 
 .responsive-navbar-nav{
