@@ -16,7 +16,7 @@ const montarConteudo = (lista) => {
 
 const Cursos = [
     {
-        img: "https://scontent.ffor23-1.fna.fbcdn.net/v/t1.6435-1/p148x148/51768489_2216868438642807_3460762326448209920_n.png?_nc_cat=103&ccb=1-3&_nc_sid=1eb0c7&_nc_ohc=LDQXShsEWHkAX-lcMHF&_nc_ht=scontent.ffor23-1.fna&oh=597603ab5547584ddf4718a8f72e7969&oe=61223F68",
+        img: "https://hermes.digitalinnovation.one/courses/badge/c1f33b18-497b-408b-885f-ee8db71d872b.png",
         nome: "Introdução ao Git e ao GitHub ",
         instituicao: "Digital Innovation One",
         data: "Emitido em 25 de junho de 2021",
