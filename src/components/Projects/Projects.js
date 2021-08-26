@@ -11,8 +11,8 @@ import "./styles.css";
 
 const Projetos = [
     { nome: "Meu_Curriculo", descricao: "Projeto de um currículo responsivo online", github: "https://github.com/MoisesMed/Meu_Curriculo", vercel: "https://moises-portfolio.vercel.app/" },
-    { nome: "Pharma Inc", descricao: "Front-End Challenge by coodesh 🏅 2021", github: "https://github.com/MoisesMed/Pharma_Inc", vercel: "https://pharma-inc-zeta.vercel.app/" },
     { nome: "Minhas Tarefas", descricao: "Projeto para organização pessoal. Em construção!", vercel: "https://minhas-tarefas.vercel.app/home", under: 1 },
+    { nome: "Pharma Inc", descricao: "Front-End Challenge by coodesh 🏅 2021", github: "https://github.com/MoisesMed/Pharma_Inc", vercel: "https://pharma-inc-zeta.vercel.app/" },
     { nome: "E-commerce", descricao: "Projeto de simulação de uma página de E-commerce", github: "https://github.com/MoisesMed/Ecommerce", vercel: "https://teamsoft.vercel.app/compra" },
     { nome: "ProjetoBebidas", descricao: "E-commerce de bebidas feito em 2 aulas da faculdade", github: "https://github.com/MoisesMed/ProjetoBebidas", vercel: 0 }
 ]
