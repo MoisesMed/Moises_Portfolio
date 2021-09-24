@@ -10,8 +10,10 @@ import ReactGA from 'react-ga';
 function App() {
   ReactGA.initialize('G-BB7PQZKY80');
   ReactGA.pageview(window.location.pathname + window.location.search);
+
   return (
-    <div className="App" >
+  <div className="App" >
+    <text>teste </text>
       <Header />
       <Welcome />
       <About />
@@ -19,7 +21,7 @@ function App() {
       <Certificates />
       <Projects />
       <Footer />
-    </div >
+    </div>
   );
 }
 
