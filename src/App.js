@@ -13,7 +13,6 @@ function App() {
 
   return (
   <div className="App" >
-    <text>teste </text>
       <Header />
       <Welcome />
       <About />
