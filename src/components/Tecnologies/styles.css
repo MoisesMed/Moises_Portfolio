@@ -20,9 +20,6 @@
 
 .stack{
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.175);
-    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
-    /* background-color:antiquewhite; */
     margin:15px;
     height:120px;
     background-color:white;
@@ -30,6 +27,11 @@
     min-width:270px !important;
     max-width:270px;
     border-radius:12px;
+    transition-duration: 500ms;
+}.stack:hover{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.175);
+    transition-duration: 300ms;
+    transform: scale(1.1, 1.1)
 }
 
 .tecTitle{
