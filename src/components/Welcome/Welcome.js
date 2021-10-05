@@ -19,8 +19,9 @@ export default function Welcome() {
                     <p className="paragrafo">Meu nome é <strong className="nameStrong">Moisés</strong>, </p>
                     <p className="paragrafo">Sou desenvolvedor Front End.</p>
                 </Col>
-                <Col xs={5}>
-                    <img className="img" src={welcomeHands}></img></Col>
+                <Col xs={5} className="imgCol">
+                    <img className="img" src={welcomeHands}></img>
+                    </Col>
             </Row>
         </Container>
     );

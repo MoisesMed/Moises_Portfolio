@@ -67,4 +67,9 @@ text-align:center;
   padding:3px;
   padding-right:5px;
   padding-left:5px;
+  transition-duration: 500ms !important;
+}.badge:hover{
+  transition-duration: 300ms !important;
+  transform: scale(1.05, 1.05);
+  color:white;
 }

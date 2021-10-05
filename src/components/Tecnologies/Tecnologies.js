@@ -24,17 +24,17 @@ const Sticks = [
 
 
 export default function Tecnologies() {
-
     return (
-        <Container style={{
+        <Container 
+        style={{
             paddingTop: 100, paddingBottom: 100, backgroundColor: "#d5f7e6", maxWidth: "100%"
         }}
             id="tecnologias">
-            <Col className="colStacks" >
+            <Col className="colStacks"  >
                 <Col className="mainTitle">Habilidades</Col>
                 <Row className="RowStacks">
                     {Sticks.map((item) =>
-                        <Col xs={3} className="stack" >
+                        <Col xs={3} className="stack" id="stack" >
                             <Col className="tecTitle">{item.nome}</Col>
                             <Col>
                                 <img src={item.img} className="tecImg" style={{ width: 60 }} />

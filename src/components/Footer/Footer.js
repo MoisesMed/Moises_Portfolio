@@ -32,7 +32,7 @@ export default function Footer() {
                         <text>GitHub</text>
                     </a>
                     <a className="badge" href="mailto:br.moises2605@gmail.com" target="_blank" >
-                        <img style={{ paddingRight: 2 }} src="https://img.icons8.com/color/30/000000/gmail--v1.png" />
+                        <img style={{ paddingRight: 3 }} src="https://img.icons8.com/color/30/000000/gmail--v1.png" />
                         <text>Email</text>
                     </a>
                 </Row>
