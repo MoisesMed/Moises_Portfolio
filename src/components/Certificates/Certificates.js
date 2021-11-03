@@ -33,7 +33,7 @@ const Cursos = [
         ]
     },
     {
-        img: "https://media-exp1.licdn.com/dms/image/C4D0BAQGwg6B2WR3_vw/company-logo_100_100/0/1544649290856?e=1634774400&v=beta&t=l4IDPB8AAdbV-LF6M1wwacTR355XJyNXAR_4yWrl9Rw",
+        img: "https://seeklogo.com/images/U/udemy-logo-C3D3F5AC0C-seeklogo.com.png",
         nome: "React + Redux: Fundamentos e 2 Apps",
         instituicao: "Udemy Brasil",
         data: "Emitido em 26 de março de 2021",
@@ -49,7 +49,7 @@ const Cursos = [
         ]
     },
     {
-        img: "https://media-exp1.licdn.com/dms/image/C4D0BAQGwg6B2WR3_vw/company-logo_100_100/0/1544649290856?e=1634774400&v=beta&t=l4IDPB8AAdbV-LF6M1wwacTR355XJyNXAR_4yWrl9Rw",
+        img: "https://seeklogo.com/images/U/udemy-logo-C3D3F5AC0C-seeklogo.com.png",
         nome: "JavaScript do básico ao avançado",
         instituicao: "Udemy Brasil",
         data: "Emitido em 2 de março de 2021",
@@ -67,7 +67,7 @@ const Cursos = [
         ]
     },
     {
-        img: "https://media-exp1.licdn.com/dms/image/C4E0BAQGKsgVCzy1NHw/company-logo_100_100/0/1519905336941?e=1635379200&v=beta&t=iFyHkrawQHQGxlwcK57DimnmJIUwXgfCCgf9vLiTwsM",
+        img: "https://scontent.ffor23-1.fna.fbcdn.net/v/t1.6435-1/p148x148/169482339_2794015667516783_1231735569235682548_n.png?_nc_cat=108&ccb=1-5&_nc_sid=1eb0c7&_nc_ohc=2sjBVcB3bvAAX_NIV79&_nc_ht=scontent.ffor23-1.fna&oh=b116697c1e5748781a436326f8ec5d8d&oe=61A8B11A",
         nome: "Montagem e manutenção de computadores",
         instituicao: "Microlins",
         data: "Emitido em 2016",
@@ -92,8 +92,8 @@ export default function Certificates() {
             <Row Row style={{ justifyContent: "space-evenly", width: "100%", margin: 0, padding: 10 }}>
                 {Cursos.map((item) =>
                     <Row className="rowCard">
-                        <Col xs={2} style={{ padding: 0, margin: 10 }}>
-                            <Row className="certImg"><img className="imgCert" style={{ width: 70, borderRadius: 16 }} src={item.img} /></Row>
+                        <Col xs={2} style={{ padding: 0, margin: 10,alignSelf:"center" }}>
+                            <Row className="certImg"><img className="imgCert" style={{ width: 70,borderRadius:16 }} src={item.img} /></Row>
                         </Col>
                         <Col style={{ padding: 0, margin: 0, borderLeft: "2px solid white" }}>
                             <Row className="certTitle">{item.nome}</Row>

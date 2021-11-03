@@ -36,7 +36,6 @@
 }
 .certImg{
     justify-content: center;
-    padding-top:15px
 }
 
 .rowMainTitle{
@@ -90,11 +89,14 @@
 }
 .buttonLeft{
     margin-right:15px !important
+}.buttonLeft:hover,.buttonRight:hover{
+    transform: scale(1.03, 1.03);
+    border:1px solid #2581C4 !important
 }
 
 @media screen and (max-width: 350px) {
     .imgCert{
-        width:60px !important
+        width:60px !important;
     }
 .certTitle{
     font-size:13px !important

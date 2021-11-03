@@ -23,7 +23,7 @@ export default function Footer() {
                         <img style={{ paddingRight: 2 }} src="https://img.icons8.com/color/30/000000/linkedin.png" />
                         <text>Linkedin</text>
                     </a>
-                    <a className="badge" href="https://drive.google.com/u/0/uc?id=14Q_cAysrG2vWE-AoSHm4RguCKK9oDXJP&export=download" target="_blank">
+                    <a className="badge" href="https://drive.google.com/u/0/uc?id=1woEs774cqV7bc6d0WZDjndGEyteswRqW&export=download" target="_blank">
                         <img style={{ paddingRight: 2 }} src="https://img.icons8.com/officel/30/000000/open-resume.png" />
                         <text>Currículo</text>
                     </a>

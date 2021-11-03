@@ -83,7 +83,6 @@
 }
 .githubButton{
     margin: 10px !important; 
-    /* margin-left: 30px !important;  */
     width: 80px !important; 
     margin-bottom: 12px !important; 
     background-color: #63e1a8 !important; 
@@ -96,6 +95,9 @@
    margin-bottom: 12px !important; 
    background-color: #63e1a8 !important; 
    font-weight: 550 !important 
+}.vercelButton:hover,.githubButton:hover,.onlyGithub:hover{
+    transform: scale(1.03, 1.03);
+    color:#fff
 }
 
 @media screen and (max-width: 280px) {
