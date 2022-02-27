@@ -19,7 +19,7 @@ export default function Footer() {
                     {/* <img style={{ width: 40 }} src="https://png.pngtree.com/png-vector/20190927/ourlarge/pngtree-computer-screen-illustration-with-smile-emoticons-computer-vector-illustration-for-web-png-image_1745878.jpg" /> */}
                 </Row>
                 <Row className="footerBottom">
-                    <a className="badge" href="https://www.linkedin.com/in/mois%C3%A9s-medeiros/" target="_blank" >
+                    <a className="badge" href="https://www.linkedin.com/in/moises-medeiros/" target="_blank" >
                         <img style={{ paddingRight: 2 }} src="https://img.icons8.com/color/30/000000/linkedin.png" />
                         <text>Linkedin</text>
                     </a>
