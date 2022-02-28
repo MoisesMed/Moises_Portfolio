@@ -1,0 +1,32 @@
+.experienceColCard{
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.175);
+        background-color: white;
+        border-radius: 12px;
+        transition-duration: 500ms;
+        margin-bottom:20px;
+}
+
+.experienceRowImg{
+    justify-content: center;
+    border-bottom:2px solid rgb(213, 247, 230);
+    padding-bottom:12px;
+}
+
+.expImg{
+    border-radius:50%;
+    width:70px;
+    height:70px;
+}
+
+.titleItems{
+    font-size:16px;
+}
+
+.valueItems{
+    font-size:15px
+}
+
+.expLi{
+    font-size:15px;
+    /* font-weight:550 */
+}

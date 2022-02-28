@@ -12,7 +12,6 @@ export default function Footer() {
 
     return (
         <Container className="containerFooter" id="rodape">
-            <Col style={{ padding: 10 }}>
                 <Row className="footerTop">
                     <img style={{ width: 45 }} src="https://png.pngtree.com/png-vector/20190927/ourlarge/pngtree-computer-screen-illustration-with-smile-emoticons-computer-vector-illustration-for-web-png-image_1745878.jpg" />
                     <text style={{ paddingRight: 5, paddingLeft: 5, fontSize: 17 }}>Aqui estão minhas formas de contato!</text>
@@ -38,7 +37,6 @@ export default function Footer() {
                 </Row>
                 <Row className="footerBottom">
                 </Row>
-            </Col>
         </Container>
     );
 };

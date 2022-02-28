@@ -4,8 +4,9 @@
   align-items: center;
   justify-content:center;
   text-align:center;
-  height:85px;
+  height:100px;
   background-color:white;
+  margin-top:4px;
 }
 .footerTop{
 justify-content: center;

@@ -6,6 +6,7 @@ import Tecnologies from './components/Tecnologies/Tecnologies.js'
 import Certificates from './components/Certificates/Certificates.js'
 import Projects from './components/Projects/Projects.js'
 import ReactGA from 'react-ga';
+import Experience from './components/Experience/Experience.js'
 
 function App() {
   ReactGA.initialize('G-BB7PQZKY80');
@@ -17,6 +18,7 @@ function App() {
       <Welcome />
       <About />
       <Tecnologies />
+      <Experience/>
       <Certificates />
       <Projects />
       <Footer />
