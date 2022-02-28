@@ -47,38 +47,39 @@ export default function Experience() {
 
     return ( 
         <Container 
-        style={{ paddingTop: 100, maxWidth: "100%" }}
+        style={{ paddingTop: 100,paddingBottom:50, maxWidth: "100%" }}
             id="experience">
             <Col className="colStacks"  >
-                <Col className="mainTitle">Experiências e Certificações </Col>
+                <Col className="mainTitle">Experiências</Col>
                 <Row className="RowStacks">
                     {experienceArray.map((item) =>
                         <Col lg={11} sm={12} className="experienceColCard" id="stack" >
                             <Col className="experienceRowImg">
                                 <img src={item.img} className="expImg"/>
                                <Row>
-                                   <Col>
+                                   <Col lg={6} sm={12}>
                                    <span className="titleItems">Instituição: </span> 
                                    <span className="valueItems">{item.nome}</span>
                                    </Col>
-                                   <Col>
+                                   <Col lg={6} sm={12}>
                                    <span className="titleItems">Tipo: </span> 
                                    <span className="valueItems">{item.tipo}</span>
                                    </Col>
                                </Row>
                                <Row>
-                                   <Col>
+                                   <Col lg={6} sm={12}>
                                    <span className="titleItems">Permanência: </span> 
                                    <span className="valueItems">{item.tempo}</span>
                                    </Col>
-                                   <Col>
+                                   <Col lg={6} sm={12}>
                                    <span className="titleItems">Cargo: </span> 
                                    <span className="valueItems">{item.cargo}</span>
                                    </Col>
                                </Row>
                             </Col>
                             <Row>
-                                <Col className="mt-3 mb-3">
+                                <Col className="mb-3">
+                                    <span style={{fontWeight:550,fontSize:16,lineHeight:3}}>Atribuições</span>
                                 {item.atribuicoes.map(item =>
                                     <li className="expLi">{item.atr}</li>
                                     )}

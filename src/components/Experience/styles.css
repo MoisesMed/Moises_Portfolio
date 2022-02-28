@@ -3,7 +3,7 @@
         background-color: white;
         border-radius: 12px;
         transition-duration: 500ms;
-        margin-bottom:20px;
+        margin-bottom:28px;
 }
 
 .experienceRowImg{
@@ -19,11 +19,11 @@
 }
 
 .titleItems{
-    font-size:16px;
+    font-size:1rem;
 }
 
 .valueItems{
-    font-size:15px
+    font-size:0.9rem
 }
 
 .expLi{

@@ -88,13 +88,14 @@ export default function Certificates() {
 
     return (
         <Container className="certMain" id="certificacoes" >
+            <Row className="rowMainTitle">Certificações</Row>
             <Row Row style={{ justifyContent: "space-evenly", width: "100%", margin: 0, padding: 10 }}>
                 {Cursos.map((item) =>
                     <Row className="rowCard">
                         <Col xs={2} style={{ padding: 0, margin: 10, alignSelf: "center" }}>
                             <Row className="certImg"><img className="imgCert" style={{ width: 70, borderRadius: 16 }} src={item.img} /></Row>
                         </Col>
-                        <Col style={{ padding: 0, margin: 0, borderLeft: "2px solid #d5f7e6" }}>
+                        <Col style={{ padding: 0, margin: 0, borderLeft: "2px solid white" }}>
                             <Row className="certTitle">{item.nome}</Row>
                             <Row className="certRow">{item.instituicao}</Row>
                             <Row className="certRow">{item.data}</Row>
