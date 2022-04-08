@@ -6,4 +6,16 @@
 body{
     margin:0px;
     padding:0px;
+    background-color:#1d1d1d;
+}
+
+:root {
+    --brand-primary-color:#e5e5e5;
+    --brand-secondary-color:#2a2a2a;
+    --brand-tertiary-color:rgb(97 218 251);
+}
+
+.fluidContainer{
+    align-self:center;
+    max-width: 1200px;
 }

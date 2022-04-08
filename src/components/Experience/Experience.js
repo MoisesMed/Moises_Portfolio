@@ -1,8 +1,4 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-import React, {
-    useState,
-    useEffect
-} from "react";
+import React from "react";
 import {
     Container,
     Col,
@@ -31,7 +27,7 @@ export default function Experience() {
         {atr:"Manutenção de códigos em JavaScript e React"}
     ]
         },
-     { 
+     {
          img:"https://media-exp1.licdn.com/dms/image/C510BAQEoyZSbzumUWw/company-logo_100_100/0/1519872692684?e=1654128000&v=beta&t=AlNo8buQ94PvkxW-hAKz4HMRempE4hhqORR0q5d5jPo",
         nome: "Banco do Nordeste do Brasil S.A",
         tempo: "Nov de 2020 - Ago de 2021 (10 meses)",
@@ -45,8 +41,8 @@ export default function Experience() {
         ]
         }]
 
-    return ( 
-        <Container 
+    return (
+        <Container
         style={{ paddingTop: 100,paddingBottom:50, maxWidth: "100%" }}
             id="experience">
             <Col className="colStacks"  >
@@ -58,21 +54,21 @@ export default function Experience() {
                                 <img src={item.img} className="expImg"/>
                                <Row>
                                    <Col lg={6} sm={12}>
-                                   <span className="titleItems">Instituição: </span> 
+                                   <span className="titleItems">Instituição: </span>
                                    <span className="valueItems">{item.nome}</span>
                                    </Col>
                                    <Col lg={6} sm={12}>
-                                   <span className="titleItems">Tipo: </span> 
+                                   <span className="titleItems">Tipo: </span>
                                    <span className="valueItems">{item.tipo}</span>
                                    </Col>
                                </Row>
                                <Row>
                                    <Col lg={6} sm={12}>
-                                   <span className="titleItems">Permanência: </span> 
+                                   <span className="titleItems">Permanência: </span>
                                    <span className="valueItems">{item.tempo}</span>
                                    </Col>
                                    <Col lg={6} sm={12}>
-                                   <span className="titleItems">Cargo: </span> 
+                                   <span className="titleItems">Cargo: </span>
                                    <span className="valueItems">{item.cargo}</span>
                                    </Col>
                                </Row>

@@ -1,29 +1,23 @@
-import Header from './components/Header/Header.js'
-import Footer from './components/Footer/Footer.js'
-import Welcome from './components/Welcome/Welcome.js'
-import About from './components/About/About.js'
-import Tecnologies from './components/Tecnologies/Tecnologies.js'
-import Certificates from './components/Certificates/Certificates.js'
-import Projects from './components/Projects/Projects.js'
 import ReactGA from 'react-ga';
-import Experience from './components/Experience/Experience.js'
+import Routes from "./routes/Routes";
+import {BrowserRouter as Router} from "react-router-dom";
+import NavBar from "./components/NavBar";
+import styled from "styled-components";
 
-function App() {
-  ReactGA.initialize('G-BB7PQZKY80');
-  ReactGA.pageview(window.location.pathname + window.location.search);
+const StyledLayout = styled.div`
+  display: flex;
+`
 
-  return (
-  <div className="App" >
-      <Header />
-      <Welcome />
-      <About />
-      <Tecnologies />
-      <Experience/>
-      <Certificates />
-      <Projects />
-      <Footer />
-    </div>
-  );
+export default function App() {
+    ReactGA.initialize('G-BB7PQZKY80');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+
+    return (
+        <Router>
+            <StyledLayout>
+                <NavBar/>
+                <Routes/>
+            </StyledLayout>
+        </Router>
+    );
 }
-
-export default App;
