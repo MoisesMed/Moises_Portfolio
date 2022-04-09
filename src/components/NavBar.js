@@ -23,7 +23,7 @@ const StyledNavBarDiv = styled.div`
   @media screen and (max-width: 700px) {
     display: ${props => props.showMenu ? 'flex' : 'none'};
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 2;
   }
 `
