@@ -33,7 +33,7 @@ const LinkItemContainer = styled(NavLink)`
 
 export default function NavItemLink({to, children, ...props}) {
     return (
-        <LinkItemContainer to={to} {...props}>
+        <LinkItemContainer to={to} {...props} onClick={() => props.close()}>
             {children}
         </LinkItemContainer>
 

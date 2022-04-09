@@ -18,4 +18,5 @@ body{
 .fluidContainer{
     align-self:center;
     max-width: 1200px;
+    /*height:100vh;*/
 }

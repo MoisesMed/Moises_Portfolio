@@ -26,7 +26,7 @@ export default function Skills() {
     const past = moment("2020-11-01");
     const duration = moment.duration(now.diff(past));
     const diffMonth = duration.asMonths().toString().split(".")
-    console.log(moment.duration(now.diff(past)).asMonths())
+
     const skill = [{nome: "JavaScript", data: "2020-10-01", final: "now"},
         {nome: "React", data: "2020-11-01", final: "now"},
         {nome: "HTML", data: "2020-11-01", final: "now"},
