@@ -43,10 +43,7 @@ export const StyledLabel = styled.span`
   color: rgb(207, 207, 207);
   width: 100%;
   display: block;
-  // text-align: ${({start}) => start === true ? "start" : "center"};
     text-align: ${({responsive}) => responsive === true ? "start" : "center"};
-  @media screen and (min-width: 768px) {
-  }
 `
 
 export const StyledSmallLabel = styled.span`

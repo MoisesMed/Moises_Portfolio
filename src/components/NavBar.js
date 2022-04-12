@@ -76,7 +76,7 @@ export default function NavBar() {
                     <NavItemLink close={closeMenu} to={"about"}>About</NavItemLink>
                     <NavItemLink close={closeMenu} to={"skills"}>Skills</NavItemLink>
                     <NavItemLink close={closeMenu} to={"experience"}>Experience</NavItemLink>
-                    {/*<NavItemLink to={"projects"}>Projects</NavItemLink>*/}
+                    <NavItemLink close={closeMenu} to={"projects"}>Projects</NavItemLink>
                     {/*<NavItemLink to={"contact"}>Contact</NavItemLink>*/}
                 </StyledCol>
                 <StyledNavBarIcons>

@@ -63,7 +63,7 @@ export default function ExperienceCard() {
                             </Col>
                             <Col xl={6} md={12} sm={12} xs={12}>
                                 <Row className="justify-content-center">
-                                    <StyledSmallTitle dashed>Stacks and Technologies used</StyledSmallTitle>
+                                    <StyledSmallTitle dashed>Technologies</StyledSmallTitle>
                                     {item.stack.map(item => <StyledBadge
                                         src={`https://img.shields.io/badge/${item}-181818?style=for-the-badge&logo=${item == "React Native" ? "react" : item}`}/>)}
                                 </Row>
