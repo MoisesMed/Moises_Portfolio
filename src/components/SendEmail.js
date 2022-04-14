@@ -21,6 +21,14 @@ const StyledSendEmailDiv = styled.div`
   }
 `
 
+const StyledDualSection = styled.div`
+display:flex;
+   flex-direction: column;
+  @media screen and (min-width: 1200px) {
+   flex-direction: row;
+  }
+`
+
 const StyledEmailSectionDiv = styled.div`
   display: flex;
   flex-direction: column;
@@ -91,14 +99,14 @@ export default function SendEmail() {
             <StyledLabel>If you have any opportunities, questions or want to get in touch, do not hesitate to send me an
                 email.</StyledLabel>
             <form id="contact-form" onSubmit={sendEmail}>
-                <StyledRow>
+                <StyledDualSection>
                     <StyledEmailSectionDiv>
                         <input required placeholder={"Your name"} type="text" name="name"/>
                     </StyledEmailSectionDiv>
                     <StyledEmailSectionDiv>
                         <input required placeholder={"Your email"} type="email" name="email"/>
                     </StyledEmailSectionDiv>
-                </StyledRow>
+                </StyledDualSection>
                 <StyledEmailSectionDiv>
                     <input placeholder={"Title"} type="title" name="title"/>
                 </StyledEmailSectionDiv>

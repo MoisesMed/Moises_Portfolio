@@ -10,6 +10,7 @@ const StyledMyContactsDiv = styled.div`
   display: flex;
   flex-direction: column;
   gap:4px;
+  margin-bottom:20px;
 `
 
 const StyledContactItem = styled.div`
@@ -48,10 +49,10 @@ export default function MyContacts() {
             <StyledA href={"https://github.com/MoisesMed"} target="_blank"><Github/><StyledLabel start>Here you will be redirected to my Github</StyledLabel><Github/></StyledA>
             </StyledContactItem>
             <StyledContactItem>
-            <StyledA href="mailto:br.moises2605@gmail.com" target="_blank"><Gmail/><StyledLabel start>Here you will send me an email</StyledLabel><Gmail/></StyledA>
+            <StyledA href="mailto:br.moises2605@gmail.com" target="_blank"><Gmail/><StyledLabel start>Here you can send me an email</StyledLabel><Gmail/></StyledA>
             </StyledContactItem>
             <StyledContactItem>
-            <StyledA href={"https://drive.google.com/file/d/1rKECPO24HkZcIsX225aMsWSaNXqU8tsj/view?usp=sharing"} target="_blank"><File/><StyledLabel start>Here you will see my curriculum</StyledLabel><File/></StyledA>
+            <StyledA href={"https://drive.google.com/file/d/1rKECPO24HkZcIsX225aMsWSaNXqU8tsj/view?usp=sharing"} target="_blank"><File/><StyledLabel start>Here you can see my curriculum</StyledLabel><File/></StyledA>
             </StyledContactItem>
         </StyledMyContactsDiv>
     );

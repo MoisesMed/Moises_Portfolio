@@ -8,10 +8,10 @@ export default function Contact() {
     return (
         <Container fluid className="fluidContainer">
             <Row>
-                <Col xs={6}>
+                <Col lg={6} >
                 <MyContacts/>
                 </Col>
-                <Col xs={6}>
+                <Col lg={6}>
                     <SendEmail/>
                 </Col>
             </Row>
