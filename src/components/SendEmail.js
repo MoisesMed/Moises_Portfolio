@@ -93,17 +93,17 @@ export default function SendEmail() {
             <form id="contact-form" onSubmit={sendEmail}>
                 <StyledRow>
                     <StyledEmailSectionDiv>
-                        <input placeholder={"Your name"} type="text" name="name"/>
+                        <input required placeholder={"Your name"} type="text" name="name"/>
                     </StyledEmailSectionDiv>
                     <StyledEmailSectionDiv>
-                        <input placeholder={"Your email"} type="email" name="email"/>
+                        <input required placeholder={"Your email"} type="email" name="email"/>
                     </StyledEmailSectionDiv>
                 </StyledRow>
                 <StyledEmailSectionDiv>
                     <input placeholder={"Title"} type="title" name="title"/>
                 </StyledEmailSectionDiv>
                 <StyledEmailSectionDiv>
-                    <textarea placeholder={"Message"} name="message"/>
+                    <textarea required placeholder={"Message"} name="message"/>
             <StyledButtonSend type="submit" value="Send">Send</StyledButtonSend>
                 </StyledEmailSectionDiv>
             </form>
