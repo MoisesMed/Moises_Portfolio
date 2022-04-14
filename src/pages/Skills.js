@@ -25,12 +25,11 @@ export default function Skills() {
     const now = moment(new Date());
     const past = moment("2020-11-01");
     const duration = moment.duration(now.diff(past));
-    const diffMonth = duration.asMonths().toString().split(".")
 
-    const skill = [{nome: "JavaScript", data: "2020-10-01", final: "now"},
-        {nome: "React", data: "2020-11-01", final: "now"},
-        {nome: "HTML", data: "2020-11-01", final: "now"},
-        {nome: "CSS", data: "2020-11-01", final: "now"},
+    // const skill = [{nome: "JavaScript", data: "2020-10-01", final: "now"},
+    //     {nome: "React", data: "2020-11-01", final: "now"},
+    //     {nome: "HTML", data: "2020-11-01", final: "now"},
+    //     {nome: "CSS", data: "2020-11-01", final: "now"},
         // {nome: "SQL", data: "2020-11-01", final: "2021-08-01"},
         // {nome: "NPM", data: "2020-11-01", final: "now"},
         // {nome: "Git", data: "2020-11-01", final: "now"},
@@ -39,7 +38,7 @@ export default function Skills() {
         // {nome: "Redux", data: "2021-04-01", final: "2021-10-01"},
         // {nome: "Styled Components", data: "2021-04-01", final: "now"},
         // {nome: "Context API", data: "2021-04-01", final: "now"},
-    ]
+    // ]
     const stack = ["react", "JavaScript", "React Native", "html5", "css3", "npm", "git", "bootstrap", "context_api", "react router", "axios", "styled components", "material_ui", "redux", "SQL"]
 
     return (
@@ -67,7 +66,7 @@ export default function Skills() {
                         <StyledTitle>Skills and <StyledDraftLabel>Courses</StyledDraftLabel></StyledTitle>
                         <StyledBadgeDiv>
                             {stack.map(item => <StyledBadge
-                                src={`https://img.shields.io/badge/${item}-181818?style=for-the-badge&logo=${item == "React Native" ? "react" : item}`}/>)}
+                                src={`https://img.shields.io/badge/${item}-181818?style=for-the-badge&logo=${item === "React Native" ? "react" : item}`}/>)}
                         </StyledBadgeDiv>
                     </Row>
                     {/*{skill.map(item =>*/}

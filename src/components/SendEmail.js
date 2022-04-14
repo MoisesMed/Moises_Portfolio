@@ -1,6 +1,6 @@
 import React from "react";
 import emailjs from "@emailjs/browser";
-import {StyledLabel, StyledRow, StyledTitle} from "./StyledComponents";
+import {StyledLabel, StyledTitle} from "./StyledComponents";
 import styled from "styled-components";
 import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

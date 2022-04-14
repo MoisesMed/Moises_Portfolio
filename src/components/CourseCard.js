@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import {
     StyledLabel,
-    StyledDraftLabel,
     StyledSmallTitle,
     StyledSmallLabel
 } from "./StyledComponents"

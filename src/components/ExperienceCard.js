@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {StyledLabel, StyledIcon, StyledBadge, StyledSmallTitle} from "../components/StyledComponents"
+import {StyledLabel, StyledIcon, StyledBadge, StyledSmallTitle} from "./StyledComponents"
 import {Col, Row} from "react-bootstrap";
 
 const StyledExperienceCard = styled.div`
@@ -65,7 +65,7 @@ export default function ExperienceCard() {
                                 <Row className="justify-content-center">
                                     <StyledSmallTitle dashed>Technologies</StyledSmallTitle>
                                     {item.stack.map(item => <StyledBadge
-                                        src={`https://img.shields.io/badge/${item}-181818?style=for-the-badge&logo=${item == "React Native" ? "react" : item}`}/>)}
+                                        src={`https://img.shields.io/badge/${item}-181818?style=for-the-badge&logo=${item === "React Native" ? "react" : item}`}/>)}
                                 </Row>
                             </Col>
                         </Row>
