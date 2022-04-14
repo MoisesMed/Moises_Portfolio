@@ -42,7 +42,7 @@ const StyledNavBarIcons = styled.div`
 `
 
 const StyledNavBarMenu = styled.img`
-  width: 36px;
+  width: 45px;
   margin: 4px 6px 0px 0px;
   position: fixed;
   z-index: 10;
