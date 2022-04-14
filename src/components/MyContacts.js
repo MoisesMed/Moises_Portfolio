@@ -39,7 +39,7 @@ export default function MyContacts() {
 
     return (
         <StyledMyContactsDiv>
-            <StyledTitle>Contacts</StyledTitle>
+            <StyledTitle>Contact Info</StyledTitle>
             <StyledLabel>Here are my main forms of contact, feel free to contact me at any time.</StyledLabel>
             <StyledContactItem>
                 <StyledA href={"https://www.linkedin.com/in/moises-medeiros/"} target="_blank"><Linkedin/> <StyledLabel start>Here you will be redirected to my linkedin</StyledLabel><Linkedin/> </StyledA>
