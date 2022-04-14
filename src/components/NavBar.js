@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import styled from "styled-components";
 import NavItemLink from "./NavItemLink";
 import {ReactComponent as Github} from '../assets/img/github.svg'
@@ -6,7 +6,7 @@ import {ReactComponent as Linkedin} from '../assets/img/linkedin.svg'
 import computerIcon from "../assets/img/computerIcon.png"
 import MenuOpen from "../assets/img/menu_open.svg"
 import MenuClosed from "../assets/img/menu_close.svg"
-import {StyledA, StyledCol, StyledIcon} from "../components/StyledComponents"
+import {StyledA, StyledCol, StyledIcon} from "./StyledComponents"
 
 const StyledNavBarDiv = styled.div`
   background-color: #181818;
@@ -74,10 +74,10 @@ export default function NavBar() {
                 </StyledNavBarLogo>
                 <StyledCol>
                     <NavItemLink close={closeMenu} to={"about"}>About</NavItemLink>
-                    <NavItemLink close={closeMenu} to={"skills"}>Skills</NavItemLink>
                     <NavItemLink close={closeMenu} to={"experience"}>Experience</NavItemLink>
                     <NavItemLink close={closeMenu} to={"projects"}>Projects</NavItemLink>
-                    {/*<NavItemLink to={"contact"}>Contact</NavItemLink>*/}
+                    <NavItemLink close={closeMenu} to={"skills"}>Skills</NavItemLink>
+                    <NavItemLink close={closeMenu} to={"contact"}>Contact</NavItemLink>
                 </StyledCol>
                 <StyledNavBarIcons>
                     <StyledA href={"https://www.linkedin.com/in/moises-medeiros/"} target="_blank"><Linkedin/></StyledA>

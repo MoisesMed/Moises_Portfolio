@@ -1,4 +1,3 @@
-import computerIcon from "../assets/img/computerIcon.png"
 import styled from "styled-components";
 
 export const StyledCol = styled.div`

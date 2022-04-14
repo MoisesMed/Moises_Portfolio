@@ -1,16 +1,20 @@
 import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
-import Computer from "../assets/img/computer.svg"
-import AboutMe from "../components/AboutMe";
-import {StyledLogo} from "../components/StyledComponents";
-import Map from "../components/Map";
+import SendEmail from "../components/SendEmail";
+import MyContacts from "../components/MyContacts";
 
 export default function Contact() {
 
     return (
         <Container fluid className="fluidContainer">
-          contact
-            <Map/>
+            <Row>
+                <Col xs={6}>
+                <MyContacts/>
+                </Col>
+                <Col xs={6}>
+                    <SendEmail/>
+                </Col>
+            </Row>
         </Container>
     );
 }

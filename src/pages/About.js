@@ -2,7 +2,7 @@ import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import Computer from "../assets/img/computer.svg"
 import AboutMe from "../components/AboutMe";
-import {StyledLogo, StyledRow} from "../components/StyledComponents";
+import {StyledLogo} from "../components/StyledComponents";
 
 export default function About() {
 

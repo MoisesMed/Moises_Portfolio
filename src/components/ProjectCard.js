@@ -1,14 +1,6 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import styled from "styled-components";
-import {
-    StyledA,
-    StyledCol, StyledDraftLabel,
-    StyledIcon,
-    StyledLabel,
-    StyledSmallTitle,
-    StyledTitle
-} from "../components/StyledComponents"
-import {Col, Row} from "react-bootstrap";
+import {StyledDraftLabel} from "./StyledComponents"
 import Bebidas from "../assets/img/bebidas.png"
 import Deliverize from "../assets/img/deliverize.png"
 import Cv from "../assets/img/meu_cv_project.png"
@@ -22,8 +14,8 @@ const StyledProjectCardMain = styled.div`
   height: 100%;
   justify-content: center;
   gap: 32px;
-  margin-top:16px;
-  
+  margin-top: 16px;
+
   @media screen and (max-width: 1000px) {
     gap: 16px;
   }
@@ -53,7 +45,7 @@ const StyledProjectCard = styled.div`
     height: 350px;
   }
 
-  button , a{
+  button, a {
     display: none;
   }
 
@@ -64,7 +56,7 @@ const StyledProjectCard = styled.div`
     opacity: 0.8;
     height: 100%;
     font-weight: 600;
-    font-size:18px;
+    font-size: 18px;
     justify-content: center;
     align-items: center;
     text-decoration: none;
