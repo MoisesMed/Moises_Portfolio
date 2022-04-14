@@ -12,7 +12,7 @@
     <li>CSS</li>
     <li>React.JS</li>
     <li>Bootstrap</li>
-    <li>Material UI</li>
+    <li>Styled Components</li>
 </ul>
 
 <hr>
@@ -23,7 +23,7 @@ https://moises-portfolio.vercel.app/
 </a> </h3>
 <br>
 
-![moises-portfolio vercel app_](https://user-images.githubusercontent.com/43209743/127076302-f40233c9-38c9-42af-952f-528b623fce40.png)
+<!-- ![moises-portfolio vercel app_](https://user-images.githubusercontent.com/43209743/127076302-f40233c9-38c9-42af-952f-528b623fce40.png) -->
 
 
 <span style="text-align:end;">Desenvoldido por <b>Moisés Medeiros</b>.<span>
