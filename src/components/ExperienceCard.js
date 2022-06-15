@@ -2,6 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import {StyledLabel, StyledIcon, StyledBadge, StyledSmallTitle} from "./StyledComponents"
 import {Col, Row} from "react-bootstrap";
+import bnbImg from "../assets/img/bnb.jpeg"
+import tsImg from "../assets/img/ts.jpeg"
+import neoImg from "../assets/img/neo.jpeg"
 
 const StyledExperienceCard = styled.div`
   display: flex;
@@ -16,7 +19,7 @@ const StyledExperienceCard = styled.div`
 export default function ExperienceCard() {
     const experienceArray = [
         {
-            img: "https://media-exp1.licdn.com/dms/image/C4E0BAQGVw68nNmlpOw/company-logo_100_100/0/1635249282386?e=1654128000&v=beta&t=C5gN5UHFIAsH94ToaDvy5T79m3fnnlt9in-md8tBUbU",
+            img: neoImg,
             nome: "Neo Ventures",
             tempo: "Oct of 2021 - Until now",
             tipo: "Full time",
@@ -24,7 +27,7 @@ export default function ExperienceCard() {
             stack: ["react", "JavaScript", "React Native", "html5", "css3", "npm", "git", "bootstrap", "context_api", "react router", "axios", "styled components"],
         },
         {
-            img: "https://media-exp1.licdn.com/dms/image/C4E0BAQEVFOIVYXK0IQ/company-logo_100_100/0/1576084127236?e=1654128000&v=beta&t=zEMbgguOChp34wmcZYnBA3NHWPzPCDdS22znOlEq0yc",
+            img: tsImg,
             nome: "TeamSoft Tecnologia e Sistemas",
             tempo: "Apr of 2021 - Oct of 2021 (7 months)",
             tipo: "Part-time",
@@ -32,7 +35,7 @@ export default function ExperienceCard() {
             stack: ["react", "JavaScript", "React Native", "html5", "css3", "NPM", "git", "bootstrap", "material_ui", "axios", "redux", "react router"],
         },
         {
-            img: "https://media-exp1.licdn.com/dms/image/C510BAQEoyZSbzumUWw/company-logo_100_100/0/1519872692684?e=1654128000&v=beta&t=AlNo8buQ94PvkxW-hAKz4HMRempE4hhqORR0q5d5jPo",
+            img: bnbImg,
             nome: "Banco do Nordeste do Brasil S.A",
             tempo: "Nov of 2020 - Aug of 2021 (10 months)",
             tipo: "Trainee",
