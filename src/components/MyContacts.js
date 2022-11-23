@@ -52,7 +52,7 @@ export default function MyContacts() {
             <StyledA href="mailto:br.moises2605@gmail.com" target="_blank"><Gmail/><StyledLabel start>Here you can send me an email</StyledLabel><Gmail/></StyledA>
             </StyledContactItem>
             <StyledContactItem>
-            <StyledA href={"https://drive.google.com/file/d/1rKECPO24HkZcIsX225aMsWSaNXqU8tsj/view?usp=sharing"} target="_blank"><File/><StyledLabel start>Here you can see my curriculum</StyledLabel><File/></StyledA>
+            <StyledA href={"https://drive.google.com/file/d/14O7tScsVnyDuFveImnFf82BFlmUJLVE6/view"} target="_blank"><File/><StyledLabel start>Here you can see my curriculum</StyledLabel><File/></StyledA>
             </StyledContactItem>
         </StyledMyContactsDiv>
     );

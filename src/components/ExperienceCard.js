@@ -5,6 +5,7 @@ import {Col, Row} from "react-bootstrap";
 import bnbImg from "../assets/img/bnb.jpeg"
 import tsImg from "../assets/img/ts.jpeg"
 import neoImg from "../assets/img/neo.jpeg"
+import osfImg from "../assets/img/osfdigital.jpeg"
 
 const StyledExperienceCard = styled.div`
   display: flex;
@@ -19,20 +20,28 @@ const StyledExperienceCard = styled.div`
 export default function ExperienceCard() {
     const experienceArray = [
         {
+            img: osfImg,
+            nome: "OSF Digital",
+            tempo: "Oct of 2022 - Until now",
+            tipo: "Full time",
+            cargo: "Front End and Mobile Developer",
+            stack: ["React", "JavaScript", "React Native", "HTML5", "CSS3", "npm", "Git", "bootstrap", "context_api", "react router", "axios", "styled components"],
+        },
+        {
             img: neoImg,
             nome: "Neo Ventures",
-            tempo: "Oct of 2021 - Until now",
+            tempo: "Oct of 2021 - Oct of 2022 (1 year)",
             tipo: "Full time",
             cargo: "Front End Developer",
-            stack: ["react", "JavaScript", "React Native", "html5", "css3", "npm", "git", "bootstrap", "context_api", "react router", "axios", "styled components"],
+            stack: ["React", "JavaScript", "HTML5", "CSS3", "npm", "Git", "bootstrap", "context_api", "React router", "axios", "styled components"],
         },
         {
             img: tsImg,
             nome: "TeamSoft Tecnologia e Sistemas",
             tempo: "Apr of 2021 - Oct of 2021 (7 months)",
             tipo: "Part-time",
-            cargo: "Front End Developer",
-            stack: ["react", "JavaScript", "React Native", "html5", "css3", "NPM", "git", "bootstrap", "material_ui", "axios", "redux", "react router"],
+            cargo: "Front End and Mobile Developer",
+            stack: ["React", "JavaScript", "React Native", "html5", "CSS3", "NPM", "Git", "bootstrap", "material_ui", "axios", "redux", "React router"],
         },
         {
             img: bnbImg,
@@ -40,7 +49,7 @@ export default function ExperienceCard() {
             tempo: "Nov of 2020 - Aug of 2021 (10 months)",
             tipo: "Trainee",
             cargo: "Web developer trainee",
-            stack: ["react", "javascript", "html5", "css3", "SQL", "sql_server", "material_ui", "npm", "git"],
+            stack: ["React", "javascript", "html5", "css3", "SQL", "sql_server", "material_ui", "npm", "Git"],
         }]
 
     return (
