@@ -1,10 +1,10 @@
 import React from "react";
-import styled from 'styled-components'
-import {NavLink} from "react-router-dom";
+import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 const LinkItemContainer = styled(NavLink)`
-  color: var(--brand-primary-color);
-  fill: var(--brand-primary-color);
+  color: ${({ theme }) => theme.labelColor};
+  fill: ${({ theme }) => theme.labelColor};
   font-size: 17px;
   text-align: -webkit-center;
   padding: 12px 0px;
@@ -13,29 +13,27 @@ const LinkItemContainer = styled(NavLink)`
 
   &:hover {
     text-decoration: none;
-    color: var(--brand-tertiary-color);
+    color: ${({ theme }) => theme.strongColor};
   }
 
   &:hover svg {
-    fill: var(--brand-tertiary-color);
+    fill: ${({ theme }) => theme.strongColor};
   }
 
   &.active {
     text-decoration: none;
-    color: var(--brand-tertiary-color);
+    color: ${({ theme }) => theme.strongColor};
   }
 
   &:hover svg {
-    fill: var(--brand-tertiary-color);
+    fill: ${({ theme }) => theme.strongColor};
   }
+`;
 
-`
-
-export default function NavItemLink({to, children, ...props}) {
-    return (
-        <LinkItemContainer to={to} {...props} onClick={() => props.close()}>
-            {children}
-        </LinkItemContainer>
-
-    )
+export default function NavItemLink({ to, children, ...props }) {
+  return (
+    <LinkItemContainer to={to} {...props} onClick={() => props.close()}>
+      {children}
+    </LinkItemContainer>
+  );
 }

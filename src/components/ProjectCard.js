@@ -22,9 +22,9 @@ const StyledProjectCardMain = styled.div`
 `;
 
 const StyledProjectCard = styled.div`
-  border: 2px solid var(--brand-tertiary-color);
+  border: 2px solid ${({ theme }) => theme.strongColor};
   width: 45%;
-  background-color: var(--brand-secondary-color);
+  background-color: ${({ theme }) => theme.backgroundSecondaryColor};
   color: var(--brand-primary-color);
   border-radius: 2px;
   text-align: center;
