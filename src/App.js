@@ -26,11 +26,11 @@ export default function App() {
   const handleChangeTheme = () => {
     if (isDarkTheme) {
       setThemeColors({
-        backgroundColor: "white",
+        backgroundColor: "#f5f5f5",
         backgroundSecondaryColor: "#d7d7d7",
         titleColor: "black",
         labelColor: "rgb(207, 207, 207)",
-        strongColor: "rgb(97, 218, 251)",
+        strongColor: "#52b9d4",
       });
     } else {
       setThemeColors({

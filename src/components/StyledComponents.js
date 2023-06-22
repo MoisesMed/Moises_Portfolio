@@ -49,9 +49,8 @@ export const StyledLabel = styled.span`
 export const StyledSmallLabel = styled.span`
   font-weight: ${({ bold }) => (bold === true ? "bold" : "400px")};
   font-size: 14px;
-  color: rgb(207, 207, 207);
+  color: ${({ theme }) => theme.titleColor};
   width: 100%;
-  // text-align: ${({ start }) => (start === true ? "start" : "center")};
   @media screen and (min-width: 768px) {
     text-align: ${({ responsive }) =>
       responsive === true ? "start" : "center"};
@@ -63,7 +62,7 @@ export const StyledDraftLabel = styled.span`
 `;
 
 export const StyledA = styled.a`
-  fill: #e5e5e5;
+  fill: ${({ theme }) => theme.titleColor};
   text-align: -webkit-center;
   margin-bottom: 12px;
   cursor: pointer;

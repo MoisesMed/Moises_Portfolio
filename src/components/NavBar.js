@@ -9,12 +9,12 @@ import MenuClosed from "../assets/img/menu_close.svg";
 import { StyledA, StyledCol, StyledIcon } from "./StyledComponents";
 
 const StyledNavBarDiv = styled.div`
-  background-color: #181818;
+  background-color: ${({ theme }) => theme.backgroundColor};
   position: sticky;
   top: 0;
   height: 100vh;
-  width: 120px;
-  min-width: 120px;
+  width: 130px;
+  min-width: 130px;
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -39,9 +39,9 @@ const StyledNavBarIcons = styled.div`
   justify-content: flex-end;
   gap: 16px;
   border-top: 1px solid #282828;
+  width: inherit;
   div {
     display: flex;
-    width: 100%;
     justify-content: space-evenly;
     align-items: flex-end;
   }
@@ -67,6 +67,7 @@ const StyledButtonSend = styled.button`
   font-size: 18px;
   height: 35px;
   margin-top: 8px;
+  margin: 0 5px;
   border-radius: 4px;
   background-color: #2a2a2a;
   color: #e5e5e5;

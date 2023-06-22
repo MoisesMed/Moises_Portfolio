@@ -10,11 +10,11 @@ body{
 }
 
 :root {
-    --background-color:#1d1d1d;
-    --background-secondary-color:#2a2a2a;
-    --title-color:#e5e5e5;
-    --label-color:rgb(207,207,207);
-    --strong-color:rgb(97 218 251);
+    --background-color:"";
+    --background-secondary-color:"";
+    --title-color:"";
+    --label-color:"";
+    --strong-color:"";
 }
 
 .fluidContainer{

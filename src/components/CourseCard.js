@@ -54,14 +54,15 @@ export default function CourseCard() {
       description:
         "Javascript course from basic to advanced, object orientation, web programming with Node, programming logic, regular expressions, events and DOM.",
     },
-    //     {
-    //     name: "Computer technician",
-    //     institution: "Microlins",
-    //     emission: "Aug of 2016",
-    //     workload: "89 hours",
-    //     hasLink:false,
-    //     description: "The course involved assembly and maintenance of computers. He was taught in the course on hardware and software"
-    // },
+    {
+      name: "Computer technician",
+      institution: "Microlins",
+      emission: "Aug of 2016",
+      workload: "89 hours",
+      hasLink: false,
+      description:
+        "The course involved assembly and maintenance of computers. He was taught in the course on hardware and software",
+    },
   ];
   return (
     <>
