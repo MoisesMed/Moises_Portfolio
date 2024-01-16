@@ -29,7 +29,7 @@ export default function AboutMe() {
       </StyledTitle>
       <StyledLabel>
         My name is <StyledDraftLabel> Moisés Medeiros Matos</StyledDraftLabel>,
-        I am 24 years old and I do college of Information Systems. I am a{" "}
+        I am 24 years old, and I have already graduated in Information Systems. I am a{" "}
         <StyledDraftLabel> Fullstack developer</StyledDraftLabel>, computer
         technician and technology lover.
       </StyledLabel>
@@ -43,7 +43,7 @@ export default function AboutMe() {
       <StyledLabel>
         In this job, I was a Web development intern and worked with{" "}
         <StyledDraftLabel>
-          JavaScript, HTML, CSS, React and SQL.{" "}
+          JavaScript, HTML, CSS, React, React Native and Next.{" "}
         </StyledDraftLabel>
         Since then, I've been focusing on these stacks.
       </StyledLabel>
