@@ -1,24 +1,26 @@
-*{
-    font-family: Roboto Mono, monospace;
-    /* margin:0px !important */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  font-family: Roboto;
+  /* margin:0px !important */
 }
 
-body{
-    margin:0px;
-    padding:0px;
-    background-color:var(--background-color);
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--background-color);
 }
 
 :root {
-    --background-color:"";
-    --background-secondary-color:"";
-    --title-color:"";
-    --label-color:"";
-    --strong-color:"";
+  --background-color: "";
+  --background-secondary-color: "";
+  --title-color: "";
+  --label-color: "";
+  --strong-color: "";
 }
 
-.fluidContainer{
-    align-self:center;
-    max-width: 1200px;
-    /*height:100vh;*/
+.fluidContainer {
+  align-self: center;
+  max-width: 1200px;
+  /*height:100vh;*/
 }
