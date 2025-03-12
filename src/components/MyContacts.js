@@ -71,12 +71,7 @@ export default function MyContacts() {
         </StyledA>
       </StyledContactItem>
       <StyledContactItem>
-        <StyledA
-          href={
-            "https://drive.google.com/file/d/14O7tScsVnyDuFveImnFf82BFlmUJLVE6/view"
-          }
-          target="_blank"
-        >
+        <StyledA href={process.env.REACT_APP_CV_ATUAL} target="_blank">
           <File />
           <StyledLabel start>Here you can see my curriculum</StyledLabel>
           <File />
