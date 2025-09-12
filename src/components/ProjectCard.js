@@ -102,9 +102,9 @@ export default function ProjectCard() {
   ];
   return (
     <StyledProjectCardMain>
-      {projects.map((item) => (
-        <StyledProjectCard img={item.img}>
-          <a href={item.link} target="_blank">
+      {projects.map((item, i) => (
+        <StyledProjectCard key={item.name + i} img={item.img}>
+          <a href={item.link} target="_blank" rel="noreferrer">
             <StyledDraftLabel>Click here to see!</StyledDraftLabel>
           </a>
         </StyledProjectCard>

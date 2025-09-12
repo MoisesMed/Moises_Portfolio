@@ -32,9 +32,12 @@ export default function ExperienceCard() {
       cargo: "Front End and Mobile Developer",
       stack: [
         "React",
+        "TypeScript",
         "JavaScript",
         "React Native",
+        "Next JS",
         "HTML5",
+        "tailwind",
         "CSS3",
         "npm",
         "Git",
@@ -108,8 +111,8 @@ export default function ExperienceCard() {
 
   return (
     <>
-      {experienceArray.map((item) => (
-        <StyledExperienceCard>
+      {experienceArray.map((item, i) => (
+        <StyledExperienceCard key={item.cargo + i}>
           <Col>
             <Row>
               <Col xl={1} md={2} sm={12} xs={12} className="align-self-center">
@@ -135,8 +138,9 @@ export default function ExperienceCard() {
               <Col xl={6} md={12} sm={12} xs={12}>
                 <Row className="justify-content-center">
                   <StyledSmallTitle dashed>Technologies</StyledSmallTitle>
-                  {item.stack.map((item) => (
+                  {item.stack.map((item, iS) => (
                     <StyledBadge
+                      key={item + iS}
                       src={`https://img.shields.io/badge/${item}-181818?style=for-the-badge&logo=${
                         item === "React Native" ? "react" : item
                       }`}

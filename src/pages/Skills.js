@@ -8,7 +8,6 @@ import {
   StyledTitle,
 } from "../components/StyledComponents";
 import Computer from "../assets/img/coding.svg";
-import moment from "moment";
 import CourseCard from "../components/CourseCard";
 import styled from "styled-components";
 
@@ -25,7 +24,10 @@ const StyledBadgeDiv = styled.div`
 export default function Skills() {
   const stack = [
     "react",
+    "typescript",
     "JavaScript",
+    "next js",
+    "tailwind",
     "React Native",
     "html5",
     "css3",
@@ -90,21 +92,25 @@ export default function Skills() {
               </StyledDraftLabel>{" "}
             </StyledLabel>
           </StyledCol>
+          <StyledTitle>
+            <StyledDraftLabel>Ski</StyledDraftLabel>lls
+          </StyledTitle>
+          <StyledBadgeDiv>
+            {stack.map((item, i) => (
+              <StyledBadge
+                key={item + i}
+                src={`https://img.shields.io/badge/${item}-181818?style=for-the-badge&logo=${
+                  item === "React Native" ? "react" : item
+                }`}
+              />
+            ))}
+          </StyledBadgeDiv>
         </Col>
         <Col lg={6} sm={12}>
           <Row>
             <StyledTitle>
-              Skills and <StyledDraftLabel>Courses</StyledDraftLabel>
+              Cour<StyledDraftLabel>ses</StyledDraftLabel>
             </StyledTitle>
-            <StyledBadgeDiv>
-              {stack.map((item) => (
-                <StyledBadge
-                  src={`https://img.shields.io/badge/${item}-181818?style=for-the-badge&logo=${
-                    item === "React Native" ? "react" : item
-                  }`}
-                />
-              ))}
-            </StyledBadgeDiv>
           </Row>
           <CourseCard />
         </Col>
