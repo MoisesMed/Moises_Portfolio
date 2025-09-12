@@ -29,7 +29,7 @@ export default function AboutMe() {
       </StyledTitle>
       <StyledLabel>
         My name is <StyledDraftLabel> Moisés Medeiros Matos</StyledDraftLabel>,
-        I am 25 years old, Brazilian, and I have already graduated in
+        I am 26 years old, Brazilian, and I have already graduated in
         Information Systems. I am a{" "}
         <StyledDraftLabel> Fullstack developer</StyledDraftLabel>, computer
         technician and technology lover.
