@@ -1,26 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
-* {
-  font-family: Roboto;
+*,
+*::before,
+*::after {
+  font-family: "Roboto", sans-serif;
   /* margin:0px !important */
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
 }
 
 body {
   margin: 0px;
   padding: 0px;
   background-color: var(--background-color);
+  min-height: 100vh;
 }
 
 :root {
-  --background-color: "";
-  --background-secondary-color: "";
-  --title-color: "";
-  --label-color: "";
-  --strong-color: "";
+  --background-color: #1d1d1d;
+  --background-secondary-color: #2a2a2a;
+  --title-color: #e5e5e5;
+  --label-color: rgb(207, 207, 207);
+  --strong-color: rgb(97, 218, 251);
 }
 
 .fluidContainer {
   align-self: center;
   max-width: 1200px;
-  /*height:100vh;*/
+  min-height: 100vh;
+  padding: 24px 16px;
+  box-sizing: border-box;
+}
+
+.fullHeight {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }

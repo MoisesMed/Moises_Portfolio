@@ -16,8 +16,10 @@ const StyledMyContactsDiv = styled.div`
 const StyledContactItem = styled.div`
   display: flex;
   align-self: center;
-  margin-left: 8px;
   margin-top: 8px;
+  align-items: center;
+  text-align: center;
+
   span {
     &:hover {
       color: ${({ theme }) => theme.strongColor};
@@ -39,41 +41,54 @@ export default function MyContacts() {
   return (
     <StyledMyContactsDiv>
       <StyledTitle>Contact Info</StyledTitle>
-      <StyledLabel>
+      <StyledLabel responsive>
         Here are my main forms of contact, feel free to contact me at any time.
       </StyledLabel>
       <StyledContactItem>
         <StyledA
-          href={"https://www.linkedin.com/in/moises-medeiros/"}
+          href="https://www.linkedin.com/in/moises-medeiros/"
           target="_blank"
+          rel="noreferrer noopener"
         >
-          <Linkedin />{" "}
-          <StyledLabel start>
+          <Linkedin />
+          <StyledLabel responsive>
             Here you will be redirected to my linkedin
           </StyledLabel>
-          <Linkedin />{" "}
+          <Linkedin />
         </StyledA>
       </StyledContactItem>
       <StyledContactItem>
-        <StyledA href={"https://github.com/MoisesMed"} target="_blank">
+        <StyledA
+          href="https://github.com/MoisesMed"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <Github />
-          <StyledLabel start>
+          <StyledLabel responsive>
             Here you will be redirected to my Github
           </StyledLabel>
           <Github />
         </StyledA>
       </StyledContactItem>
       <StyledContactItem>
-        <StyledA href="mailto:br.moises2605@gmail.com" target="_blank">
+        <StyledA
+          href="mailto:br.moises2605@gmail.com"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <Gmail />
-          <StyledLabel start>Here you can send me an email</StyledLabel>
+          <StyledLabel responsive>Here you can send me an email</StyledLabel>
           <Gmail />
         </StyledA>
       </StyledContactItem>
       <StyledContactItem>
-        <StyledA href={process.env.REACT_APP_CV_ATUAL} target="_blank">
+        <StyledA
+          href={process.env.REACT_APP_CV_ATUAL}
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <File />
-          <StyledLabel start>Here you can see my curriculum</StyledLabel>
+          <StyledLabel responsive>Here you can see my curriculum</StyledLabel>
           <File />
         </StyledA>
       </StyledContactItem>

@@ -16,10 +16,6 @@ const LinkItemContainer = styled(NavLink)`
     color: ${({ theme }) => theme.strongColor};
   }
 
-  &:hover svg {
-    fill: ${({ theme }) => theme.strongColor};
-  }
-
   &.active {
     text-decoration: none;
     color: ${({ theme }) => theme.strongColor};
@@ -30,9 +26,18 @@ const LinkItemContainer = styled(NavLink)`
   }
 `;
 
-export default function NavItemLink({ to, children, ...props }) {
+export default function NavItemLink({ to, children, close, onClick }) {
+  const handleClick = () => {
+    if (typeof close === "function") {
+      close();
+    }
+    if (typeof onClick === "function") {
+      onClick();
+    }
+  };
+
   return (
-    <LinkItemContainer to={to} {...props} onClick={() => props.close()}>
+    <LinkItemContainer to={to} onClick={handleClick}>
       {children}
     </LinkItemContainer>
   );

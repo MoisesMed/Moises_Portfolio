@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import NavItemLink from "./NavItemLink";
 import { ReactComponent as Github } from "../assets/img/github.svg";
@@ -21,7 +21,7 @@ const StyledNavBarDiv = styled.div`
   border-right: 1px solid #282828;
   justify-content: space-between;
   @media screen and (max-width: 700px) {
-    display: ${(props) => (props.showMenu ? "flex" : "none")};
+    display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
     width: 100%;
     position: fixed;
     z-index: 2;
@@ -63,7 +63,7 @@ const StyledNavBarMenu = styled.img`
     border-radius: 50%;
   }
 `;
-const StyledButtonSend = styled.button`
+const StyledThemeButton = styled.button`
   font-size: 18px;
   height: 35px;
   margin-top: 8px;
@@ -74,52 +74,56 @@ const StyledButtonSend = styled.button`
   border: 1px solid #e5e5e5;
 `;
 export default function NavBar({ isDarkTheme, handleChangeTheme }) {
-  const [showMenu, setShowMenu] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const closeMenu = () => {
-    setShowMenu(false);
+    setIsMenuOpen(false);
   };
 
   return (
     <>
       <StyledNavBarMenu
-        src={showMenu ? MenuOpen : MenuClosed}
-        onClick={() => setShowMenu(!showMenu)}
+        src={isMenuOpen ? MenuOpen : MenuClosed}
+        onClick={() => setIsMenuOpen((prev) => !prev)}
       />
-      <StyledNavBarDiv showMenu={showMenu}>
+      <StyledNavBarDiv isOpen={isMenuOpen}>
         <StyledNavBarLogo>
           <StyledIcon src={computerIcon} />
         </StyledNavBarLogo>
         <StyledCol>
-          <NavItemLink close={closeMenu} to={"about"}>
+          <NavItemLink close={closeMenu} to="/about">
             About
           </NavItemLink>
-          <NavItemLink close={closeMenu} to={"experience"}>
+          <NavItemLink close={closeMenu} to="/experience">
             Experience
           </NavItemLink>
-          <NavItemLink close={closeMenu} to={"projects"}>
+          <NavItemLink close={closeMenu} to="/projects">
             Projects
           </NavItemLink>
-          <NavItemLink close={closeMenu} to={"skills"}>
+          <NavItemLink close={closeMenu} to="/skills">
             Skills
           </NavItemLink>
-          <NavItemLink close={closeMenu} to={"contact"}>
+          <NavItemLink close={closeMenu} to="/contact">
             Contact
           </NavItemLink>
         </StyledCol>
         <StyledNavBarIcons>
-          <StyledButtonSend onClick={handleChangeTheme}>
+          <StyledThemeButton onClick={handleChangeTheme}>
             {!isDarkTheme ? "Dark Mode" : "White Mode"}
-          </StyledButtonSend>
+          </StyledThemeButton>
           <div>
-            {" "}
             <StyledA
-              href={"https://www.linkedin.com/in/moises-medeiros/"}
+              href="https://www.linkedin.com/in/moises-medeiros/"
               target="_blank"
+              rel="noreferrer noopener"
             >
               <Linkedin />
             </StyledA>
-            <StyledA href={"https://github.com/MoisesMed"} target="_blank">
+            <StyledA
+              href="https://github.com/MoisesMed"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <Github />
             </StyledA>
           </div>

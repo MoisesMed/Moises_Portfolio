@@ -36,7 +36,7 @@ const StyledEmailSectionDiv = styled.div`
   border-radius: 4px;
   margin-bottom: 4px;
   width: 100%;
-  color: var(--brand-primary-color);
+  color: ${({ theme }) => theme.titleColor};
 
   input {
     border: 3px solid transparent;
@@ -81,25 +81,25 @@ const StyledButtonSend = styled.button`
 `;
 
 export default function SendEmail() {
-  function sendEmail(e) {
-    e.preventDefault();
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const form = event.currentTarget;
+
     emailjs
       .sendForm(
         "service_wq6e8kf",
         "template_mc50o9i",
-        e.target,
+        form,
         "28sbfdcsxPPKz_OgD"
       )
-      .then(
-        (result) => {
-          toast.success("Email sent successfully");
-        },
-        (error) => {
-          toast.success("Error sending email");
-        }
-      );
-    e.target.reset();
-  }
+      .then(() => {
+        toast.success("Email sent successfully");
+      })
+      .catch(() => {
+        toast.error("Error sending email");
+      });
+    form.reset();
+  };
 
   return (
     <StyledSendEmailDiv>
@@ -108,7 +108,7 @@ export default function SendEmail() {
         If you have any opportunities, questions or want to get in touch, do not
         hesitate to send me an email.
       </StyledLabel>
-      <form id="contact-form" onSubmit={sendEmail}>
+      <form id="contact-form" onSubmit={handleSubmit}>
         <StyledDualSection>
           <StyledEmailSectionDiv>
             <input required placeholder={"Your name"} type="text" name="name" />
@@ -123,7 +123,7 @@ export default function SendEmail() {
           </StyledEmailSectionDiv>
         </StyledDualSection>
         <StyledEmailSectionDiv>
-          <input placeholder={"Title"} type="title" name="title" />
+          <input placeholder={"Title"} type="text" name="title" />
         </StyledEmailSectionDiv>
         <StyledEmailSectionDiv>
           <textarea required placeholder={"Message"} name="message" />

@@ -28,9 +28,9 @@ export const StyledSmallTitle = styled.span`
   font-size: 17px;
   font-weight: bold;
   width: 100%;
-  text-align: center;
+  text-align: ${({ center }) => (center === true ?  "center" : "start")};
   @media screen and (max-width: 1199px) {
-    margin-top: 15px;
+    margin-top:  ${({ noMarginTop }) => (noMarginTop === true ?  "0px" : "15px")};
     padding-top: 10px;
     border-top: ${({ dashed }) =>
       dashed === true ? "1px solid rgb(97 218 251)" : ""};
@@ -38,16 +38,16 @@ export const StyledSmallTitle = styled.span`
 `;
 
 export const StyledLabel = styled.span`
-  font-weight: ${({ bold }) => (bold === true ? "bold" : "400px")};
+  font-weight: ${({ bold }) => (bold === true ? "bold" : "400")};
   padding: ${({ noSpace }) => (noSpace === true ? "0px" : "5px 0px")};
   color: ${({ theme }) => theme.titleColor};
   width: 100%;
   display: block;
-  text-align: ${({ responsive }) => (responsive === true ? "start" : "center")};
+  text-align: ${({ responsive }) => (responsive === true ?  "center" : "start")};
 `;
 
 export const StyledSmallLabel = styled.span`
-  font-weight: ${({ bold }) => (bold === true ? "bold" : "400px")};
+  font-weight: ${({ bold }) => (bold === true ? "bold" : "400")};
   font-size: 14px;
   color: ${({ theme }) => theme.titleColor};
   width: 100%;

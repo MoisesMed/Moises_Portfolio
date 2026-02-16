@@ -10,6 +10,7 @@ import {
 import Computer from "../assets/img/coding.svg";
 import CourseCard from "../components/CourseCard";
 import styled from "styled-components";
+import { skillsStack } from "../data/skills";
 
 const StyledSkillImg = styled.img`
   height: 300px;
@@ -22,26 +23,16 @@ const StyledBadgeDiv = styled.div`
 `;
 
 export default function Skills() {
-  const stack = [
-    "react",
-    "typescript",
-    "JavaScript",
-    "next js",
-    "tailwind",
-    "React Native",
-    "html5",
-    "css3",
-    "npm",
-    "git",
-    "bootstrap",
-    "context_api",
-    "react router",
-    "axios",
-    "styled components",
-    "material_ui",
-    "redux",
-    "SQL",
-  ];
+  const toBadgeUrl = (label) => {
+    const logo =
+      label === "React Native"
+        ? "react"
+        : label.toLowerCase().replace(/\s+/g, "-");
+
+    return `https://img.shields.io/badge/${encodeURIComponent(
+      label
+    )}-181818?style=for-the-badge&logo=${encodeURIComponent(logo)}`;
+  };
 
   return (
     <Container fluid className="fluidContainer">
@@ -96,12 +87,10 @@ export default function Skills() {
             <StyledDraftLabel>Ski</StyledDraftLabel>lls
           </StyledTitle>
           <StyledBadgeDiv>
-            {stack.map((item, i) => (
+            {skillsStack.map((item) => (
               <StyledBadge
-                key={item + i}
-                src={`https://img.shields.io/badge/${item}-181818?style=for-the-badge&logo=${
-                  item === "React Native" ? "react" : item
-                }`}
+                key={item}
+                src={toBadgeUrl(item)}
               />
             ))}
           </StyledBadgeDiv>

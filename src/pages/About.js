@@ -6,8 +6,8 @@ import { StyledLogo } from "../components/StyledComponents";
 
 export default function About() {
   return (
-    <Container fluid className="fluidContainer">
-      <Row>
+    <Container fluid className="fluidContainer fullHeight">
+      <Row className="align-items-center w-100 mx-0">
         <Col xs={0} sm={4} lg={5} className="align-self-center">
           <StyledLogo src={Computer} />
         </Col>
