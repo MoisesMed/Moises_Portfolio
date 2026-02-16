@@ -74,7 +74,6 @@ export const StyledA = styled.a`
 
 export const StyledLogo = styled.img`
   width: 100%;
-  padding: 20px;
   height: 100%;
   max-height: 500px;
 `;

@@ -5,7 +5,7 @@ import { StyledTitle, StyledLabel, StyledDraftLabel } from "./StyledComponents";
 const StyledAboutDiv = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0px 50px;
+  padding: 0px 32px;
   text-align: center;
   justify-content: center;
 
