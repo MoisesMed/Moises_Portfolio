@@ -2,6 +2,9 @@
   "name": "curriculo_online",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "24.22.1"
+  },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@material-ui/core": "^4.12.2",
