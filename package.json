@@ -27,6 +27,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "typecheck": "tsc --noEmit",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -46,5 +47,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/google-map-react": "^2.1.10",
+    "@types/react": "^17.0.83",
+    "@types/react-dom": "^17.0.26",
+    "@types/styled-components": "^5.1.36",
+    "typescript": "^4.9.5"
   }
 }

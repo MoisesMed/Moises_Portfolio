@@ -9,6 +9,7 @@ import "./styles.css";
 
 const StyledLayout = styled.div`
   display: flex;
+  flex-direction: column;
   background-color: ${({ theme }) => theme.backgroundColor};
   min-height: 100vh;
   width: 100%;
@@ -20,7 +21,7 @@ const MainContent = styled.main`
 `;
 
 export default function App() {
-  const [themeName, setThemeName] = useState("dark");
+  const [themeName, setThemeName] = useState<"dark" | "light">("dark");
   const isDarkTheme = themeName === "dark";
 
   const themeColors = useMemo(
@@ -29,15 +30,15 @@ export default function App() {
         backgroundColor: "#1d1d1d",
         backgroundSecondaryColor: "#2a2a2a",
         titleColor: "#e5e5e5",
-        labelColor: "rgb(207, 207, 207)",
+        labelColor: "#a9a9a9",
         strongColor: "rgb(97, 218, 251)",
       },
       light: {
-        backgroundColor: "#f5f5f5",
-        backgroundSecondaryColor: "#d7d7d7",
-        titleColor: "black",
-        labelColor: "rgb(207, 207, 207)",
-        strongColor: "#52b9d4",
+        backgroundColor: "#ffffff",
+        backgroundSecondaryColor: "#f0f3f6",
+        titleColor: "#202833",
+        labelColor: "#66717d",
+        strongColor: "#087e9b",
       },
     }),
     []

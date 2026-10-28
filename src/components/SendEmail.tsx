@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FormEvent } from "react";
 import emailjs from "@emailjs/browser";
 import { StyledLabel, StyledTitle } from "./StyledComponents";
 import styled from "styled-components";
@@ -81,7 +81,7 @@ const StyledButtonSend = styled.button`
 `;
 
 export default function SendEmail() {
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const form = event.currentTarget;
 

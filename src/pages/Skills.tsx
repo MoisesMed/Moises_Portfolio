@@ -23,7 +23,7 @@ const StyledBadgeDiv = styled.div`
 `;
 
 export default function Skills() {
-  const toBadgeUrl = (label) => {
+  const toBadgeUrl = (label: string) => {
     const logo =
       label === "React Native"
         ? "react"

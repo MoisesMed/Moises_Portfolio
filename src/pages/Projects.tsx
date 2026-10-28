@@ -7,9 +7,8 @@ export default function Projects() {
   return (
     <Container fluid className="fluidContainer">
       <StyledTitle>Projects</StyledTitle>
-      <StyledLabel responsive>These are the projects I did in my spare time.</StyledLabel>
       <StyledLabel responsive>
-        Some are private or in progress, but will be posted here.
+        Two products built for real clients and already in production.
       </StyledLabel>
       <ProjectCard />
     </Container>

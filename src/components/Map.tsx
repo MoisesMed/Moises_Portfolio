@@ -1,7 +1,13 @@
 import React from "react";
 import GoogleMapReact from "google-map-react";
 
-const Marker = ({ text }) => <div>{text}</div>;
+interface MarkerProps {
+  lat: number;
+  lng: number;
+  text: string;
+}
+
+const Marker = ({ text }: MarkerProps) => <div>{text}</div>;
 
 const defaultCenter = {
   lat: 59.95,

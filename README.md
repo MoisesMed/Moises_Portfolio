@@ -7,7 +7,7 @@
 
 <h3>Tecnologias  usadas no desenvolvimento</h3>
 <ul>
-    <li>JavaScript</li>
+    <li>TypeScript</li>
     <li>HTML</li>
     <li>CSS</li>
     <li>React.JS</li>
@@ -27,4 +27,3 @@ https://moises-portfolio.vercel.app/
 
 
 <span style="text-align:end;">Desenvoldido por <b>Moisés Medeiros</b>.<span>
-

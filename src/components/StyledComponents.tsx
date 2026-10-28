@@ -1,5 +1,22 @@
 import styled from "styled-components";
 
+interface StyledSmallTitleProps {
+  center?: boolean;
+  noMarginTop?: boolean;
+  dashed?: boolean;
+}
+
+interface StyledLabelProps {
+  bold?: boolean;
+  noSpace?: boolean;
+  responsive?: boolean;
+}
+
+interface StyledIconProps {
+  big?: boolean;
+  circle?: boolean;
+}
+
 export const StyledCol = styled.div`
   display: flex;
   flex-direction: column;
@@ -22,7 +39,7 @@ export const StyledTitle = styled.span`
   text-align: center;
 `;
 
-export const StyledSmallTitle = styled.span`
+export const StyledSmallTitle = styled.span<StyledSmallTitleProps>`
   padding: 5px 0px;
   color: ${({ theme }) => theme.titleColor};
   font-size: 17px;
@@ -37,7 +54,7 @@ export const StyledSmallTitle = styled.span`
   }
 `;
 
-export const StyledLabel = styled.span`
+export const StyledLabel = styled.span<StyledLabelProps>`
   font-weight: ${({ bold }) => (bold === true ? "bold" : "400")};
   padding: ${({ noSpace }) => (noSpace === true ? "0px" : "5px 0px")};
   color: ${({ theme }) => theme.titleColor};
@@ -46,7 +63,7 @@ export const StyledLabel = styled.span`
   text-align: ${({ responsive }) => (responsive === true ?  "center" : "start")};
 `;
 
-export const StyledSmallLabel = styled.span`
+export const StyledSmallLabel = styled.span<{ bold?: boolean; responsive?: boolean }>`
   font-weight: ${({ bold }) => (bold === true ? "bold" : "400")};
   font-size: 14px;
   color: ${({ theme }) => theme.titleColor};
@@ -78,7 +95,7 @@ export const StyledLogo = styled.img`
   max-height: 500px;
 `;
 
-export const StyledIcon = styled.img`
+export const StyledIcon = styled.img<StyledIconProps>`
   width: ${({ big }) => (big === true ? "100%" : "35px")};
   max-width: 90px;
   margin: 12px 0px;
